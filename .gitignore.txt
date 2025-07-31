@@ -1,0 +1,29 @@
+# Ignore everything by default
+/*
+
+# Whitelist these folders
+!/globals/
+!/images/
+!/css/
+!/styleguide/
+
+# Whitelist specific files
+!index.html
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore temporary or backup files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.~
+
+# Ignore node/npm or build tools (optional)
+node_modules/
+dist/
+build/
