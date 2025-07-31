@@ -1,0 +1,284 @@
+.desktop {
+  display: flex;
+  flex-direction: column;
+  height: 1333px;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.desktop .nav-bar {
+  display: flex;
+  height: 93px;
+  align-items: center;
+  gap: 250px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #252732;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #414141;
+}
+
+.desktop .frame {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 0px 0px 50px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.desktop .ast-logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.desktop .text-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: "Open Sans-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .div {
+  display: flex;
+  width: 482px;
+  height: 50px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 0px 10px 50px;
+  position: relative;
+}
+
+.desktop .frame-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px 0px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-bottom: -1.00px;
+  margin-left: -33.00px;
+}
+
+.desktop .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Open Sans-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .rectangle {
+  position: relative;
+  width: 1px;
+  height: 1px;
+}
+
+.desktop .frame-3 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px 0px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-bottom: -1.00px;
+}
+
+.desktop .hover-searchbar {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  height: 63px;
+}
+
+.desktop .frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 922px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.desktop .overlap-wrapper {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 1652px;
+  background-color: #ffffff;
+}
+
+.desktop .overlap {
+  position: relative;
+  width: 1440px;
+  height: 922px;
+  background-image: url(./img/yellow-rectangle.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.desktop .group {
+  position: absolute;
+  width: 1047px;
+  height: 756px;
+  top: 96px;
+  left: 208px;
+}
+
+.desktop .overlap-group {
+  position: relative;
+  width: 1023px;
+  height: 756px;
+}
+
+.desktop .contact-table {
+  width: 1023px; /* Match the width of the old blue-rectangle/border */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+  position: absolute; /* Keep it positioned within the overlap-group */
+  top: 0;
+  left: 0;
+  background-color: #b5b5b5; /* Background for the table body */
+}
+
+.desktop .contact-table thead {
+  background-color: #252732; /* Background for the header */
+  color: #ffffff;
+}
+
+.desktop .contact-table th,
+.desktop .contact-table td {
+  padding: 15px; /* Add some padding for readability */
+  text-align: left; /* Align text to the left */
+  border: 1px solid #414141; /* Add borders to cells */
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .contact-table th {
+  font-family: "Open Sans-CondensedBold", Helvetica;
+  font-weight: 700;
+  font-size: 40px; /* Match the original header font size */
+  padding: 3px 15px; /* Adjust padding for header */
+}
+
+.desktop .contact-table tbody tr:nth-child(even) {
+  background-color: #e0e0e0; /* Optional: zebra striping for rows */
+}
+
+.desktop .contact-table tbody td {
+  color: #000000;
+}
+
+
+.desktop .text-wrapper-15 {
+  position: absolute;
+  width: 343px;
+  top: 7px;
+  left: 56px;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .footer {
+  display: flex;
+  flex-direction: column;
+  height: 294px;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: transparent;
+}
+
+.desktop .rectangle-2 {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 298px;
+  margin-bottom: -4.00px;
+  background-color: #252732;
+}
+
+.desktop .REPUBLIC-OF-THE {
+  position: absolute;
+  width: 251px;
+  top: 34px;
+  left: 310px;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.desktop .span {
+  font-weight: 700;
+}
+
+.desktop .text-wrapper-16 {
+  font-family: "Open Sans-Regular", Helvetica;
+}
+
+.desktop .ABOUT-GOVPH-learn {
+  position: absolute;
+  width: 336px;
+  top: 30px;
+  left: 669px;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.desktop .GOVERNMENT-LINKS {
+  position: absolute;
+  width: 251px;
+  top: 30px;
+  left: 1113px;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.desktop .coat-of-arms-of-the {
+  position: absolute;
+  width: 164px;
+  height: 185px;
+  top: 53px;
+  left: 50px;
+  object-fit: cover;
+}
