@@ -365,6 +365,7 @@
             text-align: center;
             color: #252732;
             width: 100%;
+}
 
         .contact-section {
             display: flex;
@@ -375,4 +376,4 @@
         .contact-table {
             margin: 0 auto;
 
-            
+        }
