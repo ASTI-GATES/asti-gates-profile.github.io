@@ -4,9 +4,10 @@
 .mission-vision {
   display: flex;
   flex-direction: column;
-  min-height: auto; /* Changed from 100vh to auto */
+  min-height: 100vh;
   width: 100%;
   align-items: center;
+  gap: 1rem;
   position: relative;
   background-color: #ffffff;
   overflow-x: hidden;
@@ -17,7 +18,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: auto; /* Changed from 80vh to auto */
+  min-height: 80vh;
   align-items: center;
   background-color: #ffffff;
 }
@@ -58,9 +59,6 @@
   min-width: 300px;
   height: 100vh; /* Reduced from 80vh for better content fit */
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /* Vision section */
@@ -132,7 +130,7 @@
 
 .mission-vision .rectangle-2 {
   width: 100%;
-  padding: 0; /* Removed padding to eliminate bottom white space */
+  padding: 2rem 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -157,41 +155,27 @@
     height: 60vh;
   }
   
-  .mission-vision .group,
-  .mission-vision .overlap-wrapper {
-    flex: 1 1 100%; /* Full width on mobile */
-    min-height: 300px; /* Reduced minimum height for mobile */
-    padding: 2rem 0; /* Reduced padding for mobile */
-  }
-  
-  .mission-vision .text-wrapper,
-  .mission-vision .text-wrapper-2 {
-    width: 90%; /* Wider on mobile for better readability */
-    margin: 2rem auto 1rem auto; /* Adjusted for mobile */
-  }
-  
-  .mission-vision .p,
-  .mission-vision .text-wrapper-3 {
-    width: 90%; /* Wider on mobile */
-    padding: 0 1.5rem; /* More padding on mobile */
-    margin: 1rem auto 2rem auto; /* Adjusted for mobile */
+  .mission-vision .nav-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 
-@media (max-width: 480px) {
-  .mission-vision .group,
-  .mission-vision .overlap-wrapper {
-    min-height: 250px; /* Even smaller minimum height for very small screens */
-  }
-  
+@media screen and (max-width: 768px) {
   .mission-vision .text-wrapper,
   .mission-vision .text-wrapper-2 {
-    width: 95%; /* Maximum width on very small screens */
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
   }
   
   .mission-vision .p,
   .mission-vision .text-wrapper-3 {
-    width: 95%; /* Maximum width on very small screens */
-    padding: 0 1rem;
+    font-size: clamp(1.1rem, 2.8vw, 1.6rem);
+  }
+  
+  .mission-vision .rectangle-2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }

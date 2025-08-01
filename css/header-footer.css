@@ -172,6 +172,7 @@ footer {
     padding: 40px 30px;
     margin-top: 60px;
     font-weight: 300;
+    font-family: "Open Sans", sans-serif;
 }
 
 .footer img.seal {
@@ -183,9 +184,10 @@ footer {
 .footer-columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    gap: 100px;
     max-width: 1200px;
     margin: auto;
+    width: 100%;
 }
 
 footer h4 {
@@ -210,4 +212,17 @@ footer p {
 
 footer img {
     margin-bottom: 10px;
+}
+
+/* Footer seal section - image beside text */
+.footer-seal-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer-seal-section img {
+    flex-shrink: 0;
+    margin-bottom: 0; /* Override the general footer img margin */
+    padding-right: 50px;
 }

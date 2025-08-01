@@ -1,14 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
 
-
 .team-name {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 12px;
     font-family: "Open Sans Condensed";
     text-align: center;
-    padding-top: 50px;
+    position: relative; /* Added for pseudo-elements */
+    padding: 30px 0; /* Equal padding top and bottom for centering */
+}
+
+.team-name::before,
+.team-name::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background-color: #1c1d25; /* Changed to yellow for visibility test */
+    width: 100%;
+    display: block; /* Ensure they're displayed */
+}
+
+.team-name::before {
+    top: 10px;        /* ← TOP LINE - closer to top */
+}
+
+.team-name::after {
+    bottom: 10px;     /* ← BOTTOM LINE - closer to bottom */
 }
 
 .team-description {
