@@ -31,7 +31,7 @@ function includeHTML(id, file) {
         }
     };
 
-    xhr.open('GET', `${file}`, true);
+    xhr.open('GET', `components/${file}`, true);
     xhr.send();
 }
 
