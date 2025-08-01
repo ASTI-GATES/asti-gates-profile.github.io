@@ -26,7 +26,7 @@
 .mission-vision .frame-2 {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh; /* Adjusted to fill the full height of the viewport */
   top: 0;
   left: 0;
   background-image: url('./mission vision images/Frame 2.png');
@@ -36,10 +36,10 @@
   z-index: 1;
 }
 
-.mission-vision .div {
+.mission-vision .div { /* Shows the entire mission vision content */
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -49,16 +49,14 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  min-height: 400px; /* Ensure minimum height for content */
+  
 }
 
 .mission-vision .group,
 .mission-vision .overlap-wrapper {
   flex: 1 1 50%;
   min-width: 300px;
-  height: auto; /* Changed from fixed 50vh to auto for responsiveness */
-  min-height: 400px; /* Minimum height to ensure content is readable */
-  padding: 50px 0; /* Added top and bottom padding */
+  height: 100vh; /* Reduced from 80vh for better content fit */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -68,32 +66,36 @@
 /* Vision section */
 .mission-vision .vision-holder {
   position: absolute;
-  inset: 0;
+  inset: 0; /* This makes it fill the parent */
   background-color: #252732;
   opacity: 0.6;
   z-index: 2;
+  height: 100%; /* Set to 100% to fill the parent */
+  margin: 0; /* Ensure no margin */
 }
 
 /* Mission section */
 .mission-vision .mission-holder {
   position: absolute;
-  inset: 0;
+  inset: 0; /* This makes it fill the parent */
   background-color: #d1ac37;
   opacity: 0.6;
   z-index: 2;
+  height: 100%; /* Set to 100% to fill the parent */
+  margin: 0; /* Ensure no margin */
 }
 
 /* Text styling for headings (MISSION/VISION) */
 .mission-vision .text-wrapper,
 .mission-vision .text-wrapper-2 {
   position: relative;
-  width: 80%; /* Increased from 70% for better mobile readability */
-  max-width: 400px;
-  margin: 3rem auto 1.5rem auto; /* Increased top margin for more padding */
+  width: 70%; /* Reduced from 90% */
+  max-width: 400px; /* Reduced from 500px */
+  margin: 15vh auto; /* Increased top margin to lower the text */
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   color: #ffffff;
-  font-size: clamp(1.8rem, 4vw, 3.2rem); /* Adjusted minimum size for mobile */
+  font-size: clamp(4.5rem, 4vw, 3.2rem); /* Increased from 1.8rem */
   text-align: center;
   line-height: 1.2;
   z-index: 3;
@@ -103,20 +105,30 @@
 .mission-vision .p,
 .mission-vision .text-wrapper-3 {
   position: relative;
-  width: 85%; /* Increased from 75% for better mobile readability */
-  max-width: 450px;
-  margin: 1.5rem auto 3rem auto; /* Increased bottom margin for more padding */
-  padding: 0 1rem; /* Added padding for better mobile spacing */
+  width: 100%; /* Reduced from 90% */
+  max-width: 500px; /* Reduced from 610px */
+  margin: -10vh auto; /* Increased margin to lower the text */
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #ffffff;
-  font-size: clamp(1rem, 2.5vw, 1.8rem); /* Adjusted for better mobile readability */
+  font-size: clamp(2.1rem, 2vw, 2rem); /* Increased from 1rem */
   text-align: center;
   letter-spacing: 0.05em;
-  line-height: 1.5; /* Increased for better readability */
+  line-height: 2.0; /* Slightly reduced for better vertical fit */
   z-index: 3;
 }
 
+.mission-vision .rectangle-2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #252732;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
 
 .mission-vision .rectangle-2 {
   width: 100%;
@@ -127,10 +139,22 @@
   gap: 2rem;
 }
 
-/* Responsive breakpoints for mobile and tablet */
-@media (max-width: 768px) {
-  .mission-vision .overlap {
-    flex-direction: column; /* Stack vertically on mobile */
+
+
+.mission-vision .coat-of-arms-of-the {
+  width: clamp(100px, 15vw, 164px);
+  height: auto;
+  aspect-ratio: 164/185;
+  object-fit: contain;
+  margin: 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .mission-vision .group,
+  .mission-vision .overlap-wrapper {
+    flex: 1 1 100%;
+    height: 60vh;
   }
   
   .mission-vision .group,
