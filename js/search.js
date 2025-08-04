@@ -1,9 +1,9 @@
 // Search data
 const searchData = [
     { title: 'Home', url: 'index.html', keywords: ['home', 'main', 'gates', 'geospatial analytics'] },
-    { title: 'Mission & Vision', url: 'mission.html', keywords: ['mission', 'vision', 'goals', 'objectives'] },
-    { title: 'About Gates', url: 'about.html', keywords: ['about', 'gates', 'information', 'overview'] },
-    { title: 'Contact Us', url: 'contact.html', keywords: ['contact', 'email', 'phone', 'address'] },
+    { title: 'Mission & Vision', url: 'mission-vision.html', keywords: ['mission', 'vision', 'goals', 'objectives'] },
+    { title: 'About Gates', url: 'about-gates.html', keywords: ['about', 'gates', 'information', 'overview'] },
+    { title: 'Contact Us', url: 'Contact-Us.html', keywords: ['contact', 'email', 'phone', 'address'] },
     { title: 'AI Team', url: 'ai.html', keywords: ['ai', 'artificial intelligence', 'machine learning', 'team'] },
     { title: 'Platform Team', url: 'platform.html', keywords: ['platform', 'development', 'software', 'team'] },
     { title: 'Lakehouse Team', url: 'lakehouse.html', keywords: ['lakehouse', 'data', 'analytics', 'team'] },
@@ -43,7 +43,7 @@ function showSearchSuggestions(searchTerm) {
     console.log('Found matches:', matches.length);
 
     const suggestionsHTML = matches.map(item => `
-        <div class="search-suggestion" onclick="window.location.href='${item.url}'">
+        <div class="search-suggestion" tabindex="0">
             <div class="suggestion-title">${item.title}</div>
             <div class="suggestion-keywords">${item.keywords.join(', ')}</div>
         </div>
@@ -51,6 +51,19 @@ function showSearchSuggestions(searchTerm) {
 
     suggestionsContainer.innerHTML = suggestionsHTML;
     suggestionsContainer.style.display = matches.length ? 'block' : 'none';
+
+    // Add redirect logic to each suggestion
+    Array.from(suggestionsContainer.getElementsByClassName('search-suggestion')).forEach((el, idx) => {
+        el.onmousedown = (e) => {
+            e.preventDefault(); // Prevent blur from hiding before redirect
+            window.location.href = matches[idx].url;
+        };
+        el.onkeydown = (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                window.location.href = matches[idx].url;
+            }
+        };
+    });
 }
 
 // Function to handle search submission
