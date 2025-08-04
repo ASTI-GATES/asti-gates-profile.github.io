@@ -53,4 +53,13 @@ function updateActiveNavLink() {
 document.addEventListener('DOMContentLoaded', function () {
     includeHTML('navbar', 'navbar.html');
     includeHTML('footer', 'footer.html');
+
+    // Wait for navbar to load, then initialize search redirect
+    const checkNavbarLoaded = setInterval(() => {
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput && typeof initSearchRedirect === 'function') {
+            initSearchRedirect();
+            clearInterval(checkNavbarLoaded);
+        }
+    }, 50);
 });
