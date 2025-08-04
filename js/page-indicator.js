@@ -14,4 +14,12 @@ if (page === "about.html") {
 
 if (page === "mission-vision.html") {
     document.body.classList.add('mission-vision');
+
+}
+if (page === "Contact-Us.html") {
+    document.body.classList.add('mission-vision');
+
+}
+if (page === "ai.html") {
+    document.body.classList.add('about');
 }

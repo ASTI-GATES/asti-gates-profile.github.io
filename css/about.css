@@ -116,10 +116,8 @@ body {
     bottom: 0;
     border-radius: 16px;
     pointer-events: none;
-    /* This allows clicks to pass through to the card */
     transition: opacity 0.3s ease;
     z-index: 1;
-    /* This ensures the overlay is below the button */
 }
 
 .card:hover {
@@ -188,4 +186,17 @@ body {
 .card.lakehouse::before {
     background-color: rgba(255, 59, 48, 0.5);
     /* Red overlay */
+}
+
+.card.lakehouse {
+    background-image: url('../images/lakehouse.jpg');
+}
+
+.card.interns::before {
+    background-color: rgba(225, 149, 9, 0.374);
+    /* light-blue overlay */
+}
+
+.card.interns {
+    background-image: url('../images/rectangle-16.jpg');
 }
