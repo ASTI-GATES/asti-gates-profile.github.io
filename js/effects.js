@@ -1,3 +1,4 @@
+
 // Intersection Observer for scroll animations
 const observerOptions = {
     threshold: 0.2,

@@ -226,7 +226,8 @@
             margin: 2rem auto;
             padding: 0 20px;
             box-sizing: border-box;
-}
+            }
+
 
             .contact-table th {
             background-color: #252732;
@@ -302,6 +303,18 @@
   background-color: #252732;
 }
 
+.desktop .REPUBLIC-OF-THE {
+  position: absolute;
+  width: 251px;
+  top: 34px;
+  left: 310px;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
 
 .desktop .span {
   font-weight: 700;
@@ -311,44 +324,79 @@
   font-family: "Open Sans-Regular", Helvetica;
 }
 
+.desktop .ABOUT-GOVPH-learn {
+  position: absolute;
+  width: 336px;
+  top: 30px;
+  left: 669px;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.desktop .GOVERNMENT-LINKS {
+  position: absolute;
+  width: 251px;
+  top: 30px;
+  left: 1113px;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.desktop .coat-of-arms-of-the {
+  position: absolute;
+  width: 164px;
+  height: 185px;
+  top: 53px;
+  left: 50px;
+  object-fit: cover;
+}
+
 .contact-heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 12px;
-    font-family: "Open Sans Condensed";
-    text-align: center;
-    position: relative; /* Added for pseudo-elements */
-    padding: 30px 0; /* Equal padding top and bottom for centering */
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Open Sans Condensed";
+  text-align: center;
+  position: relative;
+  padding: 30px 0;
+  color: #252732;
+  width: 100%;
 }
 
 .contact-heading::before,
 .contact-heading::after {
-    content: '';
-    position: absolute;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center the line */
-    height: 8px;
-    background-color: #1c1d25;
-    width: 100vw; /* Full viewport width */
-    display: block;
-    z-index: 1;
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8px;
+  background-color: #1c1d25;
+  width: 100vw;
+  display: block;
+  z-index: 1;
 }
 
 .contact-heading::before {
-    top: 10px;        /* ← TOP LINE */
+  top: 10px;
 }
 
 .contact-heading::after {
-    bottom: 10px;     /* ← BOTTOM LINE */
+  bottom: 10px;
 }
 
-        .contact-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .contact-table {
-            margin: 0 auto;
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-        }
+.contact-table {
+  margin: 0 auto;
+}
