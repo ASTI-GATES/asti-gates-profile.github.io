@@ -8,6 +8,11 @@ function includeHTML(id, file) {
         return;
     }
 
+    // Determine the correct path based on current location
+    const currentPath = window.location.pathname;
+    const isInHtmlFolder = currentPath.includes('/html/');
+    const componentsPath = isInHtmlFolder ? '../components/' : 'components/';
+
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         console.log(`${file} - Ready State: ${xhr.readyState}, Status: ${xhr.status}`);
@@ -31,20 +36,35 @@ function includeHTML(id, file) {
         }
     };
 
-    xhr.open('GET', `components/${file}`, true);
+    xhr.open('GET', `${componentsPath}${file}`, true);
     xhr.send();
 }
 
 // Function to update the active state in navigation
 function updateActiveNavLink() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('nav a');
+    console.log('Updating active nav link');
+    // Get the current page filename
+    const currentPath = window.location.pathname;
+    const currentPage = currentPath.split('/').pop() || 'index.html';
+    console.log('Current page:', currentPage);
+
+    // Find all navigation links
+    const navLinks = document.querySelectorAll('nav ul li a');
+    console.log('Found nav links:', navLinks.length);
 
     navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
+        const href = link.getAttribute('href');
+        // Check if the link href matches the current page
+        if (href === currentPage) {
+            console.log('Setting active:', href);
             link.classList.add('active');
+            // Also add active class to the parent li
+            const li = link.closest('li');
+            if (li) li.classList.add('active');
         } else {
             link.classList.remove('active');
+            const li = link.closest('li');
+            if (li) li.classList.remove('active');
         }
     });
 }
