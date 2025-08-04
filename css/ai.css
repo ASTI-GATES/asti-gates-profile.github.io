@@ -5,6 +5,7 @@ html {
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
 
+
 .team-name {
     font-size: 2.5rem;
     font-weight: bold;
@@ -63,7 +64,8 @@ html {
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 300px;
-    position: relative; /* Added for overlay positioning */
+    position: relative;
+    /* Added for overlay positioning */
 }
 
 .card::before {
@@ -73,9 +75,12 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #FED349; /* Default blue color */
-    opacity: 0.3; /* Semi-transparent blue overlay */
-    z-index: 1; /* Behind the profile cards but over the background image */
+    background-color: #FED349;
+    /* Default blue color */
+    opacity: 0.3;
+    /* Semi-transparent blue overlay */
+    z-index: 1;
+    /* Behind the profile cards but over the background image */
 }
 
 .profile-card {
@@ -89,8 +94,10 @@ html {
     border-radius: 30px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     transform: translateY(50%);
-    position: relative; /* Added to ensure profile cards appear above the overlay */
-    z-index: 2; /* Above the blue overlay */
+    position: relative;
+    /* Added to ensure profile cards appear above the overlay */
+    z-index: 2;
+    /* Above the blue overlay */
 }
 
 .profile-card:hover {
