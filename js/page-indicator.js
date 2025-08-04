@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener 'DOMContentLoaded', function () {
     // Get the current page filename
     const path = window.location.pathname;
     const page = path.split("/").pop();
 
-    // Check if we're on the homepage (home.html)
-    if (page === "../html/index.html") {
+
+    if (page === "index.html") {
         document.body.classList.add('Home');
     }
 }
@@ -21,5 +21,20 @@ if (page === "Contact-Us.html") {
 
 }
 if (page === "ai.html") {
-    document.body.classList.add('about');
+    document.body.classList.add('About');
+    document.body.classList.add('AI-Team');
+}
+
+if (page === "lakehouse.html") {
+    document.body.classList.add('About');
+    document.body.classList.add('Lakehouse');
+}
+
+if (page === "platform.html") {
+    document.body.classList.add('About');
+    document.body.classList.add('Platform');
+}
+if (page === "interns.html") {
+    document.body.classList.add('About');
+    document.body.classList.add('Interns');
 }
