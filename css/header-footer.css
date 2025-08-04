@@ -63,6 +63,10 @@ nav ul {
     align-items: center;
 }
 
+nav ul li a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -173,6 +177,22 @@ footer {
     margin-top: 60px;
     font-weight: 300;
     font-family: "Open Sans", sans-serif;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+footer a:visited {
+    color: white;
+}
+footer a:hover {
+    color: #FED349;
+    text-shadow: 0 0 8px #FED349, 0 0 16px #FED349;
 }
 
 .footer img.seal {
