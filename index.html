@@ -4,52 +4,106 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About GATES | DOST-ASTI</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>GATES | DOST-ASTI</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+    <link rel="stylesheet" href="css/search.css" />
+
+    <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/search.css">
-    <script src="js/components.js"></script>
-    <script src="js/search.js"></script>
+
+
+    <!-- JavaScript Files -->
+    <script src="js/components.js" defer></script>
+    <script src="js/search.js" defer></script>
+    <script src="js/slideshow.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+    <script src="js/scroll-animation.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
+
     <div id="navbar"></div>
+
     <main>
-        <section class="about">
-            <h1>ABOUT GATES</h1>
-            <p>The Geospatial Analytics and technology Solution (gates project) is designed to enhance the use of
-                geospatial science in tackling vital challenges, including disaster risk reduction, urban planning,
-                and
-                environmental management. This initiative is intended for government adoption to help reduce
-                disaster
-                risks, address urban planning issues, and improve scientific datasets for managing the environment.
-            </p>
-        </section>
-
-        <section class="team">
-            <h2>LEARN MORE ABOUT THE TEAM</h2>
-            <div class="cards">
-                <a href="ai.html" class="card ai">
-                    <button>AI</button>
-                    <a href="platform.html" class="card platform">
-                        <button>PLATFORM</button>
-                    </a>
-                </a>
-                <a href="lakehouse.html" class="card lakehouse">
-                    <button>LAKEHOUSE</button>
-                </a>
-                <a href="management.html" class="card management">
-                    <button>MANAGEMENT</button>
-                </a>
+        <!-- === SLIDESHOW === -->
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/img1.jpg" alt="Slide 1">
             </div>
-        </section>
-    </main>
+            <div class="slide fade">
+                <img src="images/img2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                <img src="images/img3.jpg" alt="Slide 3">
+            </div>
 
-    <div id="footer"></div>
+            <!-- Arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Dots -->
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <br>
+        <div class="layout">
+
+            <body>
+                <div class="container">
+                    <div class="section-blue">
+                        <div class="content">
+                            <h2>WHO WE ARE</h2>
+                            <p>The Advanced Science and Technology Institute is an agency of the Department of Science
+                                and Technology (DOST-ASTI) mandated to undertake research and development activities
+                                aimed at strengthening and modernizing information and communications technologies. The
+                                institute continuously commits to dedicate itself in delivering technology solutions in
+                                support of a productive and resilient Filipino society.</p>
+                        </div>
+                        <div class="code-pattern">
+
+                        </div>
+                    </div>
+
+                    <div class="left-sections">
+                        <div class="section-dark">
+                            <h2>WHAT WE DO</h2>
+                            <p style="margin-bottom: 15px;">DOST - ASTI focuses its resources in the following areas:
+                            </p>
+                            <ol>
+                                <li>Information and Communications Technology R&D;</li>
+                                <li>Microelectronics R&D;</li>
+                                <li>Technology Transfer; and</li>
+                                <li>Space Technology.</li>
+                            </ol>
+                        </div>
+
+                        <div class="section-yellow">
+                            <div class="content">
+                                <h2>HOW WE DO IT</h2>
+                                <p>DOST-ASTI through partnerships with local and international organizations, and
+                                    academic institutions, conducts technology development, transfer, training programs,
+                                    technical consultancy services, and technology adaptation in support of national
+                                    development goals and industry competitiveness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer"></div>
+        </div>
 </body>
 
 </html>

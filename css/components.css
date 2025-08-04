@@ -31,6 +31,34 @@ header {
     flex-wrap: wrap;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li.active a,
+nav ul li a.active,
+body.home nav ul li a[href="home.html"],
+body.home nav ul li a[href="./home.html"] {
+    background-color: #ffd700;
+    color: #1f1f2e;
+    font-weight: bold;
+}
+
 .logo {
     font-weight: bold;
     font-size: 1.5rem;
@@ -143,135 +171,114 @@ nav a.active {
     background-color: #FED349;
 }
 
-/* About Section */
-.about {
-    padding: 30px 0 30px;
-    text-align: center;
-    width: 100%;
-}
-
-.about h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    text-transform: uppercase;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
+/* Slideshow styles */
+.slideshow-container {
     position: relative;
-    display: block;
-    padding: 20px 0;
-    width: 100%;
-    margin-bottom: 40px;
+    width: 100vw;
+    height: 600px;
+    margin: 30px auto 0;
+    overflow: hidden;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
 }
 
-.about h1::before,
-.about h1::after {
-    content: '';
+.slide {
+    display: none;
     position: absolute;
-    left: 0;
-    right: 0;
-    height: 8px;
-    background-color: #1c1d25;
-    width: 100%;
-}
-
-.about h1::before {
     top: 0;
-}
-
-.about h1::after {
-    bottom: 0;
-}
-
-/* Removed the media query since we're using full width now */
-
-.about p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #333;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 30px;
-}
-
-/* Team Cards Section */
-.team {
-    padding: 50px 30px;
-    text-align: center;
-    background-color: #f7f7f7;
-}
-
-.team h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 25px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.card {
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    height: 240px;
-    padding: 20px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This will maintain aspect ratio while covering the container */
+    object-position: center;
+    /* Center the image */
+    display: block;
+}
+
+.fade {
+    animation: fade 1.5s ease;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Navigation dots */
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: white;
+}
+
+/* Navigation arrows */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 1.1rem;
-    border-radius: 16px;
+    font-size: 24px;
+    transition: 0.3s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.2);
     text-decoration: none;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+.next {
+    right: 0;
 }
 
-.card button {
-    background-color: rgba(28, 29, 37, 0.9);
-    border: 2px solid white;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.prev {
+    left: 0;
 }
 
-.card:hover button {
-    background-color: white;
-    color: #1c1d25;
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Background images */
-.card.management {
-    background-image: url('../images/management.jpg');
-}
-
-.card.platform {
-    background-image: url('../images/platform.jpg');
-}
-
-.card.ai {
-    background-image: url('../images/ai.jpg');
-
-}
-
-.card.lakehouse {
-    background-image: url('../images/lakehouse.jpg');
+/* Restore PH Seal in Footer */
+footer img.ph-seal {
+    max-height: 80px;
+    width: auto;
+    height: auto;
 }
 
 /* Footer styles */
@@ -280,6 +287,7 @@ footer {
     color: white;
     padding: 40px 30px;
     margin-top: 60px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
 
@@ -287,13 +295,13 @@ footer {
     height: 80px;
     width: auto;
     display: block;
+
 }
 
 .footer-columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
+    max-width: 3000px;
     margin: auto;
 }
 
