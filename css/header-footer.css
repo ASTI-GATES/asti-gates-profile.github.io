@@ -214,6 +214,16 @@ footer img {
     margin-bottom: 10px;
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Footer seal section - image beside text */
 .footer-seal-section {
     display: flex;
