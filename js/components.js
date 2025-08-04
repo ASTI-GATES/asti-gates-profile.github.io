@@ -8,6 +8,11 @@ function includeHTML(id, file) {
         return;
     }
 
+    // Determine the correct path based on current location
+    const currentPath = window.location.pathname;
+    const isInHtmlFolder = currentPath.includes('/html/');
+    const componentsPath = isInHtmlFolder ? '../components/' : 'components/';
+
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         console.log(`${file} - Ready State: ${xhr.readyState}, Status: ${xhr.status}`);
@@ -31,7 +36,7 @@ function includeHTML(id, file) {
         }
     };
 
-    xhr.open('GET', `components/${file}`, true);
+    xhr.open('GET', `${componentsPath}${file}`, true);
     xhr.send();
 }
 
@@ -68,4 +73,13 @@ function updateActiveNavLink() {
 document.addEventListener('DOMContentLoaded', function () {
     includeHTML('navbar', 'navbar.html');
     includeHTML('footer', 'footer.html');
+
+    // Wait for navbar to load, then initialize search redirect
+    const checkNavbarLoaded = setInterval(() => {
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput && typeof initSearchRedirect === 'function') {
+            initSearchRedirect();
+            clearInterval(checkNavbarLoaded);
+        }
+    }, 50);
 });
