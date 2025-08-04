@@ -4,20 +4,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const page = path.split("/").pop();
 
     // Check if we're on the homepage (home.html)
-    if (page === "home.html") {
-        document.body.classList.add('home');
+    if (page === "../html/index.html") {
+        document.body.classList.add('Home');
     }
 }
 if (page === "about.html") {
-    document.body.classList.add('about');
+    document.body.classList.add('About');
 }
 
 if (page === "mission-vision.html") {
-    document.body.classList.add('mission-vision');
+    document.body.classList.add('Mission-Vision');
 
 }
 if (page === "Contact-Us.html") {
-    document.body.classList.add('mission-vision');
+    document.body.classList.add('Contact-Us');
 
 }
 if (page === "ai.html") {

@@ -4,18 +4,11 @@
 .mission-vision {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-  min-height: auto;
-  width: 100%;
-  align-items: center;
-  position: ;
-=======
   min-height: 100vh;
   width: 100%;
   align-items: center;
   gap: 1rem;
   position: relative;
->>>>>>> 629594467817b74e8b6c25b4fb1dcb282634b06b
   background-color: #ffffff;
   overflow-x: hidden;
 }
@@ -35,17 +28,19 @@
 .mission-vision .frame-2 {
   position: absolute;
   width: 100%;
-  height: 100vh; /* Adjusted to fill the full height of the viewport */
+  height: 100vh;
+  /* Adjusted to fill the full height of the viewport */
   top: 0;
   left: 0;
-  background-image: url('../images/Frame\ 2.png');
+  background-image: url('./mission vision images/Frame 2.png');
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
 }
 
-.mission-vision .div { /* Shows the entire mission vision content */
+.mission-vision .div {
+  /* Shows the entire mission vision content */
   position: relative;
   width: 100%;
   height: 100vh;
@@ -58,83 +53,70 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
   min-height: 400px;
   /* Ensure minimum height for content */
-=======
-  min-height: 400px; /* Ensure minimum height for content */
 
->>>>>>> 629594467817b74e8b6c25b4fb1dcb282634b06b
 }
 
 .mission-vision .group,
 .mission-vision .overlap-wrapper {
   flex: 1 1 50%;
   min-width: 300px;
-<<<<<<< HEAD
-  height: auto;
-  /* Changed from fixed 50vh to auto for responsiveness */
   min-height: 400px;
   /* Minimum height to ensure content is readable */
   padding: 50px 0;
   /* Added top and bottom padding */
-=======
-  min-height: 400px; /* Minimum height to ensure content is readable */
-  padding: 50px 0; /* Added top and bottom padding */
->>>>>>> 629594467817b74e8b6c25b4fb1dcb282634b06b
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh; /* Reduced from 80vh for better content fit */
+  height: 100vh;
+  /* Reduced from 80vh for better content fit */
 }
 
 /* Vision section */
 .mission-vision .vision-holder {
   position: absolute;
-  inset: 0; /* This makes it fill the parent */
+  inset: 0;
+  /* This makes it fill the parent */
   background-color: #252732;
   opacity: 0.6;
   z-index: 2;
-  height: 100%; /* Set to 100% to fill the parent */
-  margin: 0; /* Ensure no margin */
+  height: 100%;
+  /* Set to 100% to fill the parent */
+  margin: 0;
+  /* Ensure no margin */
 }
 
 /* Mission section */
 .mission-vision .mission-holder {
   position: absolute;
-  inset: 0; /* This makes it fill the parent */
+  inset: 0;
+  /* This makes it fill the parent */
   background-color: #d1ac37;
   opacity: 0.6;
   z-index: 2;
-  height: 100%; /* Set to 100% to fill the parent */
-  margin: 0; /* Ensure no margin */
+  height: 100%;
+  /* Set to 100% to fill the parent */
+  margin: 0;
+  /* Ensure no margin */
 }
 
 /* Text styling for headings (MISSION/VISION) */
 .mission-vision .text-wrapper,
 .mission-vision .text-wrapper-2 {
   position: relative;
-<<<<<<< HEAD
-  width: 80%;
-  /* Increased from 70% for better mobile readability */
+  width: 70%;
+  /* Reduced from 90% */
   max-width: 400px;
-  margin: 3rem auto 1.5rem auto;
-  /* Increased top margin for more padding */
+  /* Reduced from 500px */
+  margin: 15vh auto;
+  /* Increased top margin to lower the text */
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   color: #ffffff;
-  font-size: clamp(1.8rem, 4vw, 3.2rem);
-  /* Adjusted minimum size for mobile */
-=======
-  width: 70%; /* Reduced from 90% */
-  max-width: 400px; /* Reduced from 500px */
-  margin: 15vh auto; /* Increased top margin to lower the text */
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: clamp(4.5rem, 4vw, 3.2rem); /* Increased from 1.8rem */
->>>>>>> 629594467817b74e8b6c25b4fb1dcb282634b06b
+  font-size: clamp(4.5rem, 4vw, 3.2rem);
+  /* Increased from 1.8rem */
   text-align: center;
   line-height: 1.2;
   z-index: 3;
@@ -145,23 +127,6 @@
 .mission-vision .text-wrapper-3 {
   position: relative;
   width: 85%;
-<<<<<<< HEAD
-  /* Increased from 75% for better mobile readability */
-  max-width: 450px;
-  margin: 1.5rem auto 3rem auto;
-  /* Increased bottom margin for more padding */
-  padding: 0 1rem;
-  /* Added padding for better mobile spacing */
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: clamp(1rem, 2.5vw, 1.8rem);
-  /* Adjusted for better mobile readability */
-  text-align: center;
-  letter-spacing: 0.05em;
-  line-height: 1.5;
-  /* Increased for better readability */
-=======
   max-width: 500px;
   margin: 1.5rem auto 3rem auto;
   padding: 0 1rem;
@@ -172,20 +137,14 @@
   text-align: center;
   letter-spacing: 0.05em;
   line-height: 1.7;
->>>>>>> 629594467817b74e8b6c25b4fb1dcb282634b06b
   z-index: 3;
 }
 
 .mission-vision .rectangle-2 {
   position: relative;
   width: 100%;
-<<<<<<< HEAD
-  padding: 0;
-  /* Removed padding to eliminate bottom white space */
-=======
   height: auto;
   background-color: #252732;
->>>>>>> 629594467817b74e8b6c25b4fb1dcb282634b06b
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -195,50 +154,6 @@
   gap: 2rem;
 }
 
-<<<<<<< HEAD
-/* Responsive breakpoints for mobile and tablet */
-@media (max-width: 768px) {
-  .mission-vision .overlap {
-    flex-direction: column;
-    /* Stack vertically on mobile */
-  }
-
-  .mission-vision .group,
-  .mission-vision .overlap-wrapper {
-    flex: 1 1 100%;
-    /* Full width on mobile */
-    min-height: 300px;
-    /* Reduced minimum height for mobile */
-    padding: 2rem 0;
-    /* Reduced padding for mobile */
-  }
-
-  .mission-vision .text-wrapper,
-  .mission-vision .text-wrapper-2 {
-    width: 90%;
-    /* Wider on mobile for better readability */
-    margin: 2rem auto 1rem auto;
-    /* Adjusted for mobile */
-  }
-
-  .mission-vision .p,
-  .mission-vision .text-wrapper-3 {
-    width: 90%;
-    /* Wider on mobile */
-    padding: 0 1.5rem;
-    /* More padding on mobile */
-    margin: 1rem auto 2rem auto;
-    /* Adjusted for mobile */
-  }
-}
-
-@media (max-width: 480px) {
-
-  .mission-vision .group,
-  .mission-vision .overlap-wrapper {
-    min-height: 250px;
-    /* Even smaller minimum height for very small screens */
-=======
 
 .mission-vision .coat-of-arms-of-the {
   width: clamp(100px, 15vw, 164px);
@@ -252,6 +167,7 @@
 
 /* Tablet and below */
 @media screen and (max-width: 1024px) {
+
   .mission-vision .group,
   .mission-vision .overlap-wrapper {
     flex: 1 1 100%;
@@ -276,37 +192,17 @@
     flex: 1 1 100%;
     min-height: 300px;
     padding: 2rem 0;
->>>>>>> 629594467817b74e8b6c25b4fb1dcb282634b06b
   }
 
   .mission-vision .text-wrapper,
   .mission-vision .text-wrapper-2 {
-<<<<<<< HEAD
-    width: 95%;
-    /* Maximum width on very small screens */
-=======
     width: 90%;
     margin: 2rem auto 1rem auto;
     font-size: clamp(1.8rem, 3.5vw, 2.5rem);
->>>>>>> 629594467817b74e8b6c25b4fb1dcb282634b06b
   }
 
   .mission-vision .p,
   .mission-vision .text-wrapper-3 {
-<<<<<<< HEAD
-    width: 95%;
-    /* Maximum width on very small screens */
-    padding: 0 1rem;
-  }
-}
-
-.image-block {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  min-height: 300px;
-}
-=======
     width: 90%;
     padding: 0 1.5rem;
     margin: 1rem auto 2rem auto;
@@ -315,6 +211,7 @@
 
 /* Extra small screens (up to 480px) */
 @media screen and (max-width: 480px) {
+
   .mission-vision .group,
   .mission-vision .overlap-wrapper {
     min-height: 250px;
@@ -326,8 +223,9 @@
   }
 }
 
-  
- @media screen and (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
+
   .mission-vision .group,
   .mission-vision .overlap-wrapper {
     min-height: 250px;
@@ -351,5 +249,3 @@
     text-align: center;
   }
 }
-
->>>>>>> 629594467817b74e8b6c25b4fb1dcb282634b06b
