@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo span {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo img {
+    height: 40px;
+    /* Or any fixed size */
+    width: auto;
+}
+
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1d25;
+    padding: 20px 40px;
+    color: white;
+}
+
+/* Logo container */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* spacing between logo and text */
+}
+
+/* Logo image */
+.logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Text beside the logo */
+
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Search bar styles */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    width: 200px;
+    transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 250px;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: -35px;
+    transition: color 0.3s ease;
+}
+
+.search-container button:hover {
+    color: #FED349;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #FED349;
+}
+
+/* About Section */
+
+/* Team Cards Section */
+
+
+
+
+
+
+.card button {
+    background-color: rgba(28, 29, 37, 0.9);
+    border: 2px solid white;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover button {
+    background-color: white;
+    color: #1c1d25;
+}
+
+/* Background images */
+.card.management {
+    background-image: url('../images/management.jpg');
+}
+
+.card.platform {
+    background-image: url('../images/platform.jpg');
+}
+
+.card.ai {
+    background-image: url('../images/ai.jpg');
+
+}
+
+.card.lakehouse {
+    background-image: url('../images/lakehouse.jpg');
+}
+
+/* Footer styles */
+footer {
+    background-color: #1f1f2e;
+    color: white;
+    padding: 40px 30px;
+    margin-top: 60px;
+    font-weight: 300;
+}
+
+.footer img.seal {
+    height: 80px;
+    width: auto;
+    display: block;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer li {
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+footer img {
+    margin-bottom: 10px;
+}
