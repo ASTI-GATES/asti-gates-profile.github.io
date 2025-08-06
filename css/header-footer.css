@@ -258,7 +258,6 @@ footer a:hover {
 .footer-seal-section img {
     flex-shrink: 0;
     margin-bottom: 0;
-    /* Override the general footer img margin */
     padding-right: 30px;
 }
 
