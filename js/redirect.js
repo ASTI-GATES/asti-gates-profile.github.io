@@ -2,7 +2,7 @@ function initSearchRedirect() {
     console.log('Search script initialized'); // Log script initialization
     const pages = [
         { title: "Home", url: "index.html" },
-        { title: "AI Team", url: "ai.html" },
+        { title: "AI Team", url: "html/ai.html" },
         { title: "Contact Us", url: "Contact-Us.html" },
         { title: "About GATES", url: "about-gates.html" },
         { title: "Lakehouse Team", url: "lakehouse.html" },

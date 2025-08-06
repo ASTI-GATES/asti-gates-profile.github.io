@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: 250px;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* Colors for each text block */
