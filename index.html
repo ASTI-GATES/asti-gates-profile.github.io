@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GATES | DOST-ASTI</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- JavaScript Files -->
+    <script src="js/components.js" defer></script>
+    <script src="js/slideshow.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+    <script src="js/scroll-animation.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main>
+        <!-- === SLIDESHOW === -->
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/img1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+                <img src="images/img2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                <img src="images/img3.jpg" alt="Slide 3">
+            </div>
+
+            <!-- Arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Dots -->
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <br>
+        <div class="about-grid">
+            <div class="image-block img-1"></div>
+            <div class="text-block who-we-are">
+                <h2>WHO WE ARE</h2>
+                <p>The Advanced Science and Technology Institute is an agency of the Department of Science and Technology (DOST-ASTI) mandated to undertake research and development activities aimed at strengthening and modernizing information and communications technologies. The institute continuously commits to dedicate itself in delivering technology solutions in support of a productive and resilient Filipino society.</p>
+            </div>
+            <div class="text-block what-we-do">
+                <h2>WHAT WE DO</h2>
+                <p>DOST - ASTI focuses its resources in the following areas:</p>
+                <ul>
+                    <li>Information and Communications Technology R&D;</li>
+                    <li>Microelectronics R&D;</li>
+                    <li>Technology Transfer; and</li>
+                    <li>Space Technology.</li>
+                </ul>
+            </div>
+            <div class="image-block img-2"></div>
+            <div class="image-block img-3"></div>
+            <div class="text-block how-we-do-it">
+                <h2>HOW WE DO IT</h2>
+                <p>DOST-ASTI through partnerships with local and international organizations, and academic institutions, conducts technology development, transfer, training programs, technical consultancy services, and technology adaptation in support of national development goals and industry competitiveness.</p>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script src="js/loadFooter.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

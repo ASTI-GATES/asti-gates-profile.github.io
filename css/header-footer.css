@@ -64,13 +64,7 @@ nav ul {
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.navbar a.active {
-    border-bottom: 3px solid #e8cd36;
-    color: #e8cd36;
-    font-weight: bold;
+    background-color: rgba(255,255,255,0.1);
 }
 
 nav a {
@@ -127,7 +121,39 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background-color: rgb(255, 255, 255, 0.1);
+    background-color: #FED349;
+}
+
+/* About Section */
+
+/* Team Cards Section */
+.card button {
+    background-color: rgba(28, 29, 37, 0.9);
+    border: 2px solid white;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.card:hover button {
+    background-color: white;
+    color: #1c1d25;
+}
+.card.management {
+    background-image: url('../images/management.jpg');
+}
+.card.platform {
+    background-image: url('../images/platform.jpg');
+}
+.card.ai {
+    background-image: url('../images/ai.jpg');
+}
+.card.lakehouse {
+    background-image: url('../images/lakehouse.jpg');
 }
 
 /* Footer styles */
@@ -139,26 +165,26 @@ footer {
     font-weight: 300;
     font-family: "Open Sans", sans-serif;
 }
-
 footer a {
     color: white;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
     letter-spacing: 0.3px;
     transition: color 0.3s, text-shadow 0.3s;
 }
-
 footer a:visited {
     color: white;
 }
-
+footer a:hover {
+    color: #FED349;
+    text-shadow: 0 0 8px #FED349, 0 0 16px #FED349;
+}
 .footer img.seal {
     height: 80px;
     width: auto;
     display: block;
 }
-
 .footer-columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -167,56 +193,44 @@ footer a:visited {
     margin: auto;
     width: 100%;
 }
-
 footer h4 {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 1.1rem;
 }
-
 footer ul {
     list-style: none;
     padding-left: 0;
 }
-
 footer li {
     margin-bottom: 5px;
     font-weight: 300;
 }
-
 footer p {
     font-weight: 300;
 }
-
 footer img {
     margin-bottom: 10px;
 }
-
 footer a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 footer a:hover {
     text-decoration: underline;
 }
-
-/* Footer seal section - image beside text */
 .footer-seal-section {
     display: flex;
     align-items: flex-start;
     gap: 15px;
     min-width: 300px;
 }
-
 .footer-seal-section img {
     flex-shrink: 0;
     margin-bottom: 0;
-    /* Override the general footer img margin */
     padding-right: 30px;
 }
-
 .footer-seal-section div {
     flex: 1;
     min-width: 200px;

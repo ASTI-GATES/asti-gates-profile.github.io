@@ -2,7 +2,7 @@ function initSearchRedirect() {
     console.log('Search script initialized'); // Log script initialization
     const pages = [
         { title: "Home", url: "index.html" },
-        { title: "AI Team", url: "html/ai.html" },
+        { title: "AI Team", url: "ai.html" },
         { title: "Contact Us", url: "Contact-Us.html" },
         { title: "About GATES", url: "about-gates.html" },
         { title: "Lakehouse Team", url: "lakehouse.html" },
@@ -25,16 +25,14 @@ function initSearchRedirect() {
         
         if (query) {
             const matches = pages.filter(page => 
-                page.title.toLowerCase().includes(query) || (page.desc && page.desc.toLowerCase().includes(query))
+                page.title.toLowerCase().includes(query)
             );
             console.log('Matches found:', matches.length); // Log matches
             
             matches.forEach(page => {
                 const li = document.createElement('li');
-                li.innerHTML = `<strong>${page.title}</strong><br><span style='font-size:13px;color:#888;'>${page.desc}</span>`;
+                li.textContent = page.title;
                 li.dataset.url = page.url;
-                li.style.padding = '12px 18px';
-                li.style.cursor = 'pointer';
                 
                 // Using mousedown instead of click to prevent blur interference  
                 li.addEventListener('mousedown', function(e) {
