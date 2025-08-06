@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,16 +12,17 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="mission-vision.html">Mission & Vision</a></li>
-                <li><a href="about-gates.html">About Gates</a></li>
-                <li><a href="Contact-Us.html">Contact Us</a></li>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/mission-vision.html">Mission & Vision</a></li>
+                <li><a href="../html/about-gates.html">About Gates</a></li>
+                <li><a href="../html/Contact-Us.html">Contact Us</a></li>
                 <li>
                     <div class="search-container">
-                        <input type="text" placeholder="Search..." autocomplete="off">
+                        <input id="searchInput" type="text" placeholder="Search..." autocomplete="off">
                         <button type="submit">
                             <i class="fas fa-search"></i>
                         </button>
+                        <ul id="searchResults" style="display:none; position:absolute; top:100%; left:0; right:0; background:white; color:black; z-index:1000; list-style:none; margin:0; padding:0; border-radius:0 0 4px 4px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></ul>
                     </div>
                 </li>
             </ul>
