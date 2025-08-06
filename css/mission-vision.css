@@ -112,6 +112,8 @@
   /* Reduced from 500px */
   margin: 15vh auto;
   /* Increased top margin to lower the text */
+  padding-top: 100px;
+  vertical-align: top;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   color: #ffffff;
