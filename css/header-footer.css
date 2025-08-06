@@ -45,6 +45,14 @@
     /* spacing between logo and text */
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+}
+
 /* Logo image */
 .logo img {
     height: 40px;
@@ -54,6 +62,12 @@
 }
 
 /* Text beside the logo */
+.logo span {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
 
 
 nav ul {
