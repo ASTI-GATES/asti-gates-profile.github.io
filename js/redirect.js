@@ -1,14 +1,14 @@
 function initSearchRedirect() {
     console.log('Search script initialized'); // Log script initialization
     const pages = [
-        { title: "Home", url: "index.html", desc: "home, main, gates, geospatial analytics" },
-        { title: "AI Team", url: "ai.html", desc: "ai, artificial intelligence, machine learning, team" },
-        { title: "Contact Us", url: "Contact-Us.html", desc: "contact, email, phone, address" },
-        { title: "About GATES", url: "about-gates.html", desc: "about, gates, information, overview" },
-        { title: "Lakehouse Team", url: "lakehouse.html", desc: "lakehouse, data, analytics, team" },
-        { title: "Management", url: "management.html", desc: "management, leadership, team" },
-        { title: "Mission & Vision", url: "mission-vision.html", desc: "mission, vision, goals, objectives" },
-        { title: "Platform Team", url: "platform.html", desc: "platform, development, software, team" }
+        { title: "Home", url: "index.html" },
+        { title: "AI Team", url: "html/ai.html" },
+        { title: "Contact Us", url: "Contact-Us.html" },
+        { title: "About GATES", url: "about-gates.html" },
+        { title: "Lakehouse Team", url: "lakehouse.html" },
+        { title: "Management", url: "management.html" },
+        { title: "Mission & Vision", url: "mission-vision.html" },
+        { title: "Platform Team", url: "platform.html" }
     ];
 
     const searchInput = document.getElementById('searchInput');

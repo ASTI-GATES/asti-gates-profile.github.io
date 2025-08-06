@@ -189,3 +189,12 @@ body {
     background-color: rgba(255, 59, 48, 0.5);
     /* Red overlay */
 }
+
+.card.interns::before {
+    background-color: rgba(225, 149, 9, 0.374);
+    /* light-blue overlay */
+}
+
+.card.interns {
+    background-image: url('../images/rectangle-16.jpg');
+}
