@@ -7,6 +7,18 @@
     padding: 0;
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .logo span {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
@@ -35,6 +47,9 @@
     background-color: #1c1d25;
     padding: 20px 40px;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Logo container */
@@ -164,6 +179,11 @@ footer {
     margin-top: 60px;
     font-weight: 300;
     font-family: "Open Sans", sans-serif;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: auto;
 }
 footer a {
     color: white;
@@ -234,4 +254,11 @@ footer a:hover {
 .footer-seal-section div {
     flex: 1;
     min-width: 200px;
+}
+
+/* Remove any default margin from main content */
+main {
+    flex: 1 0 auto;
+    margin: 0;
+    padding: 0;
 }
