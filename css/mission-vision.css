@@ -136,7 +136,7 @@
   font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   text-align: center;
   letter-spacing: 0.05em;
-  line-height: 1.7;
+  line-height: ;
   z-index: 3;
 }
 
@@ -149,7 +149,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   padding: 2rem 1rem;
   gap: 2rem;
 }
@@ -174,11 +173,6 @@
     height: 100%;
   }
 
-  .mission-vision .nav-bar {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
 }
 
 /* Mobile (up to 768px) */
@@ -224,7 +218,7 @@
 
   .mission-vision .p,
   .mission-vision .text-wrapper-3 {
-    width: 95%;
+    width: auto;
     padding: 0 1rem;
     font-size: clamp(1.1rem, 2.8vw, 1.6rem);
   }

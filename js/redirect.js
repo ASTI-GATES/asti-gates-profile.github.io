@@ -10,6 +10,8 @@ function initSearchRedirect() {
         { title: "Mission & Vision", url: "mission-vision.html" },
         { title: "Platform Team", url: "platform.html" }
     ];
+  
+    console.log('Search script initialized'); 
 
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
@@ -17,8 +19,9 @@ function initSearchRedirect() {
     let keepDropdownOpen = false;
 
     // Show dropdown when typing
-    searchInput.addEventListener('input', function() {
+    searchInput.addEventListener('input', function () {
         const query = this.value.trim().toLowerCase();
+
         console.log('Search query:', query); // Log search term
         
         searchResults.innerHTML = ''; // Clear previous results
@@ -45,14 +48,15 @@ function initSearchRedirect() {
                 searchResults.appendChild(li);
             });
             
-            searchResults.style.display = matches.length ? 'block' : 'none';
+            searchResults.style.display = hasVisibleItems ? 'block' : 'none';
+          
         } else {
             searchResults.style.display = 'none';
         }
     });
 
     // Handle blur event with delay to allow click events
-    searchInput.addEventListener('blur', function() {
+    searchInput.addEventListener('blur', function () {
         console.log('Blur event detected');
         setTimeout(() => {
             if (!keepDropdownOpen) {
@@ -63,7 +67,7 @@ function initSearchRedirect() {
     });
 
     // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
             searchResults.style.display = 'none';
         }

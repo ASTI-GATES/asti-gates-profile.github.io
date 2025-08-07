@@ -60,7 +60,14 @@
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 300px;
-    position: relative; /* Added for overlay positioning */
+    position: relative;
+    min-height: 500px;
+
+    /* Parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card::before {
@@ -92,12 +99,13 @@
     /* Above the blue overlay */
 }
 
+/* Temporarily removed hover effect 
 .profile-card:hover {
     color: #1c1d25;
     transform: translateY(48%) translateX(2px);
     transition: transform 0.3s ease, color 0.3s ease;
 }
-
+*/
 .card .profile-description .name {
     font-size: 20px;
     font-weight: bold;
