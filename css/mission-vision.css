@@ -110,8 +110,9 @@
   /* Reduced from 90% */
   max-width: 400px;
   /* Reduced from 500px */
-  margin: 15vh auto;
+  margin: 5vh auto;
   /* Increased top margin to lower the text */
+  vertical-align: top;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   color: #ffffff;
@@ -119,7 +120,7 @@
   /* Increased from 1.8rem */
   text-align: center;
   line-height: 1.2;
-  z-index: 3;
+  z-index: 2;
 }
 
 /* Text styling for content (mission/vision statements) */
@@ -170,7 +171,7 @@
   .mission-vision .group,
   .mission-vision .overlap-wrapper {
     flex: 1 1 100%;
-    height: 60vh;
+    height: 100%;
   }
 
 }

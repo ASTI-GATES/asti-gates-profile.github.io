@@ -60,7 +60,12 @@
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 300px;
-    position: relative; /* Added for overlay positioning */
+    position: relative; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card::before {
@@ -89,12 +94,13 @@
     position: relative; /* Added to ensure profile cards appear above the overlay */
     z-index: 2; /* Above the blue overlay */
 }
-
+/*
 .profile-card:hover {
     color: #1c1d25;
     transform: translateY(48%) translateX(2px);
     transition: transform 0.3s ease, color 0.3s ease;
 }
+*/
 
 .card .profile-description .name {
     font-size: 20px;
