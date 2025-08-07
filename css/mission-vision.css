@@ -110,8 +110,7 @@
   /* Reduced from 90% */
   max-width: 400px;
   /* Reduced from 500px */
-  margin: 5vh auto;
-  /* Increased top margin to lower the text */
+  margin: 10vh auto;
   vertical-align: top;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
@@ -205,20 +204,6 @@
 }
 
 /* Extra small screens (up to 480px) */
-@media screen and (max-width: 480px) {
-
-  .mission-vision .group,
-  .mission-vision .overlap-wrapper {
-    min-height: 250px;
-  }
-
-  .mission-vision .text-wrapper,
-  .mission-vision .text-wrapper-2 {
-    width: 95%;
-  }
-}
-
-
 @media screen and (max-width: 480px) {
 
   .mission-vision .group,

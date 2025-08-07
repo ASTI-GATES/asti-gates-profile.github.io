@@ -1,5 +1,8 @@
 function loadFooter() {
-    fetch('footer.html') // Path to footer.html (same directory)
+    // Determine correct path for footer.html
+    var currentPath = window.location.pathname;
+    var footerPath = currentPath.includes('/html/') ? '../components/footer.html' : 'components/footer.html';
+    fetch(footerPath)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
