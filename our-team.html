@@ -6,14 +6,16 @@
 
     <title>Lakehouse Team</title>
     
-    <link rel="stylesheet" href="../css/lakehouse.css">
+    <link rel="stylesheet" href="../our-team.css">
     <link rel="stylesheet" href="../css/header-footer.css">
     <link rel="stylesheet" href="../css/search.css">
-    <link rel="stylesheet" href="../css/modal.css">
+    <!--<link rel="stylesheet" href="../css/modal.css">-->
+    <link rel="stylesheet" href="../our-team-modal.css">
     
     <script src="../js/components.js" defer></script>
     <script src="../js/redirect.js" defer></script>
-    <script src="../js/modal.js" defer></script>
+    <!--<script src="../js/modal.js" defer></script>-->
+    <script src="../our-team.js" defer></script>
 
 </head>
 <body>
@@ -23,12 +25,11 @@
         <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>        
         
         <div class="card" style="background-image: url('../images/stock-1.jpg');">
-            <div class="profile-card">
-                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+            <div class="profile-card" onclick="showStaffModal('john')">
+                <img class="profile-pic" src="../images/josh.jpeg" alt="Name of Team Member">
                 <div class="profile-description">
                     <p class="name">Name</p>
-                    <p class="position">Position<br><br></p>
-                    <button>View More</button>
+                    <p class="position">Position</p>
                 </div>
             </div>
 
@@ -37,7 +38,6 @@
                 <div class="profile-description">
                     <p class="name">Name</p>
                     <p class="position">Position</p>
-                    <p class="description">Description</p>
                 </div>
             </div>
 
@@ -46,40 +46,20 @@
                 <div class="profile-description">
                     <p class="name">Name</p>
                     <p class="position">Position</p>
-                    <p class="description">Description</p>
                 </div>
             </div>
         </div>   
 
-        <div class="card" style="background-image: url('../images/stock-2.jpg');">
-            <div class="profile-card">
-                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
-                <div class="profile-description">
-                    <p class="name">Name</p>
-                    <p class="position">Position</p>
-                    <p class="description">Description</p>
-                </div>
-            </div>
-
-            <div class="profile-card">
-                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
-                <div class="profile-description">
-                    <p class="name">Name</p>
-                    <p class="position">Position</p>
-                    <p class="description">Description</p>
-                </div>
-            </div>
-
-            <div class="profile-card">
-                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
-                <div class="profile-description">
-                    <p class="name">Name</p>
-                    <p class="position">Position</p>
-                    <p class="description">Description</p>
-                </div>
+    
+    </main>
+    <div id="staffModal" class="staff-modal">
+        <div class="staff-modal-content">
+            <span class="close" onclick="closeStaffModal()">&times;</span>
+            <div id="staffModalBody">
+            <!-- Dynamic content will be inserted here -->
             </div>
         </div>
-    </main>
+    </div>
     <div id="footer"></div>
 </body>
 </html>
