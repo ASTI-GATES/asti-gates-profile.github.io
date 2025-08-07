@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
+    
+    <title>AI Team | GATES</title>
+    
     <link rel="stylesheet" href="../css/ai.css">
     <link rel="stylesheet" href="../css/header-footer.css">
     <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/our-team-modal.css">
+
     <script src="../js/components.js" defer></script>
     <script src="../js/redirect.js" defer></script>
-    <script src="../js/modal.js" defer></script>
+    <script src="../js/our-team-modal.js" defer></script>
 
     <title>AI Team | GATES Project</title>
 </head>
@@ -22,41 +25,27 @@
         <br>
         
         <div class="card" style="background-image: url('../images/stock-1.jpg');">
-            <div class="profile-card">
+            <div class="profile-card" onclick="showStaffModal('alyssa-ocampo')">
                 <img class="profile-pic modal-trigger" src="../images/ai-team_alyssa_ocampo.png" alt="Alyssa Patricia B. Ocampo">
                 <div class="profile-description">
                     <p class="name">Alyssa Patricia B. Ocampo</p>
                     <p class="position">Project Technical Specialist I - Data and Machine Learning Engineer</p>
-                    <p class="description">Educational Background: Electronics Engineering - Polytechnic University of the Philippines<br>
-                        <br>Skills: Problem Solving<br>
-                        <br>Projects: iTANONG Project, GATES<br>
-                        <br>Motto: <i>"Not throwing away my shot!"</i> - Alexander Hamilton
-                    </p>
                 </div>
             </div>
 
-            <div class="profile-card">
-                <img class="profile-pic modal-trigger" src="../images/ai-team_christoper-belaos.PNG" alt="Christopher Belaos">
+            <div class="profile-card" onclick="showStaffModal('christopher-belaos')">
+                <img class="profile-pic modal-trigger" src="../images/ai-team_christopher-belaos.PNG" alt="Christopher Belaos">
                 <div class="profile-description">
                     <p class="name">Christopher Belaos</p>
                     <p class="position">Project Technical Specialist III - AI Engineer</p>
-                    <p class="description">Projects: iTANONG, GATES<br>
-                        Skills: Developer<br>
-                    </p>
                 </div>
             </div>
 
-            <div class="profile-card">
+            <div class="profile-card" onclick="showStaffModal('jasper-castro')">
                 <img class="profile-pic modal-trigger" src="../images/ai-team_jasper-castro.png" alt="Jasper Adrian Dwight V. Castro">
                 <div class="profile-description">
                     <p class="name">Jasper Adrian Dwight V. Castro</p>
                     <p class="position">Project Technical Specialist IV - Natural Language Processing Engineer</p>
-                    <p class="description">
-                        <br>Educational Background: BS Electrical Engineering, Major in Electronics Engineering<br>
-                        <br>Projects: iTANONG, GATES<br>
-                        <br>Skills: Natural Language Processing, Machine Learning, Data Science<br>
-                        <br>Motto: <i>"When you want something, all the universe conspires in helping you to achieve it."</i> - Steve Jobs
-                    </p>
                 </div>
             </div>
         </div>
@@ -64,34 +53,38 @@
         
 
         <div class="card" style="background-image: url('../images/stock-2.jpg');">
-            <div class="profile-card">
-                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+            <div class="profile-card" onclick="showStaffModal('norbert-ibera')">
+                <img class="profile-pic modal-trigger" src="../images/ai-team_norbert-ibera.jpeg" alt="Norbert John Ibera">
                 <div class="profile-description">
-                    <p class="name">Name</p>
-                    <p class="position">Position</p>
-                    <p class="description">Description</p>
+                    <p class="name">Norbert John Ibera</p>
+                    <p class="position">Project Technical Assistant IV - Jr. Data Engineer</p>
                 </div>
             </div>
 
-            <div class="profile-card">
+            <div class="profile-card" onclick="showStaffModal('john')">
                 <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
                 <div class="profile-description">
                     <p class="name">Name</p>
-                    <p class="position">Position</p>
-                    <p class="description">Description</p>
+                    <p class="position">Project Technical Assistant IV; Jr. Data Engineer</p>
                 </div>
             </div>
 
-            <div class="profile-card">
+            <div class="profile-card" onclick="showStaffModal('john')">
                 <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
                 <div class="profile-description">
                     <p class="name">Name</p>
-                    <p class="position">Position</p>
-                    <p class="description">Description</p>
+                    <p class="position">Project Technical Assistant IV; Jr. Data Engineer</p>
                 </div>
             </div>
         </div>
     </main>
+    <div id="staffModal" class="staff-modal">
+        <div class="staff-modal-content">
+            <span class="close" onclick="closeStaffModal()">&times;</span>
+            <div id="staffModalBody">
+            </div>
+        </div>
+    </div>
     <div id="footer"></div>
 </body>
 </html>

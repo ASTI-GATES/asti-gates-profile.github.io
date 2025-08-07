@@ -102,13 +102,11 @@ html {
     z-index: 2;
 }
 
-/*
 .profile-card:hover {
     color: #1c1d25;
     transform: translateY(48%) translateX(2px);
     transition: transform 0.3s ease, color 0.3s ease;
 }
-    */
 
 .card .profile-description .name {
     font-size: 20px;
@@ -135,10 +133,10 @@ html {
 }
 
 .card .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: 5px solid black;
+    border: 3px solid black;
     margin-bottom: 10px;
     object-fit: cover;
 }
