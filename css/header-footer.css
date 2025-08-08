@@ -83,6 +83,7 @@ nav ul li a:hover {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Navbar Active State Styles */
 .navbar-nav .nav-link {
     position: relative;
@@ -95,10 +96,13 @@ nav ul li a:hover {
     transition: all 0.3s ease;
     background: transparent;
 =======
+=======
+>>>>>>> 4bb4d864e1bd8fdbf4f1fff602b513130626ef07
 .navbar a.active {
     border-bottom: 3px solid #e8cd36;
     color: #e8cd36;
     font-weight: bold;
+<<<<<<< HEAD
 >>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
 }
 
@@ -146,6 +150,8 @@ nav ul li a:hover {
     background: linear-gradient(90deg, #f59e0b, #f97316);
     border-radius: 2px;
     box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+=======
+>>>>>>> 4bb4d864e1bd8fdbf4f1fff602b513130626ef07
 }
 
 
@@ -263,10 +269,14 @@ footer {
     color: white;
     padding: 40px 30px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-top: 0;
 =======
     margin-top: 60px;
 >>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
+=======
+    margin-top: 60px;
+>>>>>>> 4bb4d864e1bd8fdbf4f1fff602b513130626ef07
     font-weight: 300;
     font-family: "Open Sans", sans-serif;
 }
