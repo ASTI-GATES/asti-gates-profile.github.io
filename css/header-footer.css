@@ -7,17 +7,6 @@
     padding: 0;
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    min-height: 100vh;
-    flex-direction: column;
-}
-
 .logo span {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
@@ -46,9 +35,6 @@ body {
     background-color: #1c1d25;
     padding: 20px 40px;
     color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 /* Logo container */
@@ -95,7 +81,7 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.nav a.active {
+.navbar a.active {
     border-bottom: 3px solid #e8cd36;
     color: #e8cd36;
     font-weight: bold;
@@ -115,6 +101,7 @@ nav a {
 .search-container {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .search-container input[type="text"] {
@@ -123,7 +110,7 @@ nav a {
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     width: 200px;
     transition: background-color 0.3s ease, width 0.3s ease;
@@ -153,41 +140,53 @@ nav a {
     color: #FED349;
 }
 
+/* Search dropdown styles */
+#searchResults {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+}
+
+#searchResults li {
+    list-style: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.2s ease;
+}
+
+#searchResults li:last-child {
+    border-bottom: none;
+}
+
+#searchResults li:hover {
+    background-color: #f8f9fa;
+}
+
+#searchResults li strong {
+    color: #1f1f2e;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#searchResults li p {
+    color: #1f1f2e;
+    font-size: 12px;
+}
 nav a:hover,
 nav a.active {
-    background-color: #FED349;
-}
-
-/* About Section */
-
-/* Team Cards Section */
-.card button {
-    background-color: rgba(28, 29, 37, 0.9);
-    border: 2px solid white;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.card:hover button {
-    background-color: white;
-    color: #1c1d25;
-}
-.card.management {
-    background-image: url('../images/management.jpg');
-}
-.card.platform {
-    background-image: url('../images/platform.jpg');
-}
-.card.ai {
-    background-image: url('../images/ai.jpg');
-}
-.card.lakehouse {
-    background-image: url('../images/lakehouse.jpg');
+    background-color: rgb(255, 255, 255, 0.1);
 }
 
 /* Footer styles */
@@ -195,35 +194,30 @@ footer {
     background-color: #1f1f2e;
     color: white;
     padding: 40px 30px;
-    margin-top: 0px;
+    margin-top: 60px;
     font-weight: 300;
     font-family: "Open Sans", sans-serif;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
-    margin-top: auto;
 }
+
 footer a {
     color: white;
     text-decoration: none;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 0;
     letter-spacing: 0.3px;
     transition: color 0.3s, text-shadow 0.3s;
 }
+
 footer a:visited {
     color: white;
 }
-footer a:hover {
-    color: #FED349;
-    text-shadow: 0 0 8px #FED349, 0 0 16px #FED349;
-}
+
 .footer img.seal {
     height: 80px;
     width: auto;
     display: block;
 }
+
 .footer-columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -232,52 +226,56 @@ footer a:hover {
     margin: auto;
     width: 100%;
 }
+
 footer h4 {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 1.1rem;
 }
+
 footer ul {
     list-style: none;
     padding-left: 0;
 }
+
 footer li {
     margin-bottom: 5px;
     font-weight: 300;
 }
+
 footer p {
     font-weight: 300;
 }
+
 footer img {
     margin-bottom: 10px;
 }
+
 footer a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Footer seal section - image beside text */
 .footer-seal-section {
     display: flex;
     align-items: flex-start;
     gap: 15px;
     min-width: 300px;
 }
+
 .footer-seal-section img {
     flex-shrink: 0;
     margin-bottom: 0;
     padding-right: 30px;
 }
+
 .footer-seal-section div {
     flex: 1;
     min-width: 200px;
-}
-
-/* Remove any default margin from main content */
-main {
-    flex: 1 0 auto;
-    margin: 0;
-    padding: 0;
 }
