@@ -1,9 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener 'DOMContentLoaded', function () {
     // Get the current page filename
     const path = window.location.pathname;
     const page = path.split("/").pop();
 
     if (page === "index.html" || page === "") {
+
         document.body.classList.add('Home');
     } else if (page === "about-gates.html") {
         document.body.classList.add('About');
@@ -20,4 +21,4 @@ document.addEventListener('DOMContentLoaded', function () {
     } else if (page === "interns.html") {
         document.body.classList.add('Interns');
     }
-});
+};
