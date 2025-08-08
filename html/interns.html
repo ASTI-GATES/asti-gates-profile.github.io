@@ -4,13 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interns | GATES</title>
+    
+    <title>Interns | GATES Project</title>
+    
     <link rel="stylesheet" href="../css/interns.css">
     <link rel="stylesheet" href="../css/header-footer.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="../css/modal.css">
     <script src="../js/components.js"></script>
     <script src="../js/redirect.js"></script>
     <script src="../js/modal.js" defer></script>
+=======
+    <link rel="stylesheet" href="../css/our-team-modal.css">
+    
+    <script src="../js/navbar-loader.js"></script>
+    <script src="../js/our-team-modal.js" defer></script>
+>>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
 
 </head>
 
@@ -24,21 +33,24 @@
             esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
             qui officia deserunt mollit anim id est laborum.</p>
         <br>
+<<<<<<< HEAD
 
         <div class="card" style="background-image: url('../images/stock-1.jpg');">
             <div class="profile-card">
                 <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Joshua P. Birad"
                     data-caption="Joshua P. Birad - Intern">
+=======
+        <div class="card" style="background-image: url('../images/stock-1.jpg');">
+            <div class="profile-card" onclick="showStaffModal('joshua-birad')">
+                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Joshua P. Birad">
+>>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
                 <div class="profile-description">
                     <p class="name">Joshua P. Birad</p>
                     <p class="position">Intern</p>
-                    <p class="description">Educational Background: Technological University of the Philippines
-                        <br>Projects: GATES
-                        <br>Skills: Data Cleaning, Git, Front-end Development
-                    </p>
                 </div>
             </div>
-
+            </div>
+<!--
             <div class="profile-card">
                 <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name">
                 <div class="profile-description">
@@ -47,7 +59,6 @@
                     <p class="description">Description</p>
                 </div>
             </div>
-
             <div class="profile-card">
                 <img class="profile-pic modal-trigger" src="../images/josh.jpeg">
                 <div class="profile-description">
@@ -57,9 +68,12 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
         <div class="card" style="background-image: url('../images/stock-2.jpg');">
             <div class="profile-card">
                 <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name">
@@ -69,7 +83,6 @@
                     <p class="description">Description</p>
                 </div>
             </div>
-
             <div class="profile-card">
                 <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name">
                 <div class="profile-description">
@@ -78,7 +91,6 @@
                     <p class="description">Description</p>
                 </div>
             </div>
-
             <div class="profile-card">
                 <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name">
                 <div class="profile-description">
@@ -86,9 +98,17 @@
                     <p class="position">Position</p>
                     <p class="description">Description</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
+    <div id="staffModal" class="staff-modal">
+        <div class="staff-modal-content">
+            <span class="close" onclick="closeStaffModal()">&times;</span>
+            <div id="staffModalBody">
+                <!-- Staff details will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
     <div id="footer"></div>
 </body>
 

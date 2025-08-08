@@ -82,6 +82,7 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+<<<<<<< HEAD
 /* Navbar Active State Styles */
 .navbar-nav .nav-link {
     position: relative;
@@ -93,6 +94,12 @@ nav ul li a:hover {
     font-weight: 500;
     transition: all 0.3s ease;
     background: transparent;
+=======
+.navbar a.active {
+    border-bottom: 3px solid #e8cd36;
+    color: #e8cd36;
+    font-weight: bold;
+>>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
 }
 
 .navbar-nav .nav-link:hover {
@@ -255,7 +262,11 @@ footer {
     background-color: #1f1f2e;
     color: white;
     padding: 40px 30px;
+<<<<<<< HEAD
     margin-top: 0;
+=======
+    margin-top: 60px;
+>>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
     font-weight: 300;
     font-family: "Open Sans", sans-serif;
 }
