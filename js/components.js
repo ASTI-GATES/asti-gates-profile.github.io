@@ -41,6 +41,19 @@ function includeHTML(id, file) {
 }
 
 // Function to update the active state in navigation
+document.addEventListener('DOMContentLoaded', function () {
+    includeHTML('navbar', 'navbar.html');
+    includeHTML('footer', 'footer.html');
+
+    // Wait for navbar to load, then initialize search redirect
+    const checkNavbarLoaded = setInterval(() => {
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput && typeof initSearchRedirect === 'function') {
+            initSearchRedirect();
+            clearInterval(checkNavbarLoaded);
+        }
+    }, 50);
+});
 function updateActiveNavLink() {
     console.log('Updating active nav link');
     // Get the current page filename
@@ -68,18 +81,3 @@ function updateActiveNavLink() {
         }
     });
 }
-
-// Load components when page loads
-document.addEventListener('DOMContentLoaded', function () {
-    includeHTML('navbar', 'navbar.html');
-    includeHTML('footer', 'footer.html');
-
-    // Wait for navbar to load, then initialize search redirect
-    const checkNavbarLoaded = setInterval(() => {
-        const searchInput = document.getElementById('searchInput');
-        if (searchInput && typeof initSearchRedirect === 'function') {
-            initSearchRedirect();
-            clearInterval(checkNavbarLoaded);
-        }
-    }, 50);
-});
