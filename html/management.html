@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="../css/management.css">
     <link rel="stylesheet" href="../css/header-footer.css">
     <link rel="stylesheet" href="../css/search.css">
-    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/our-team-modal.css">
 
     <script src="../js/components.js" defer></script>
     <script src="../js/redirect.js" defer></script>
     <script src="../js/page-indicator.js" defer></script>
-    <script src="../js/modal.js" defer></script>
+    <script src="../js/our-team-modal.js" defer></script>
 
 </head>
 
@@ -30,36 +30,31 @@
             qui officia deserunt mollit anim id est laborum.</p>
 
         <div class="card" style="background-image: url('../images/stock-1.jpg');">
-            <div class="profile-card">
-                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+            <div class="profile-card" onclick="showStaffModal('john-chris-kwong')">
+                <img class="profile-pic modal-trigger" src="../images/management_john-chris-kwong.jpg" alt="John Chris T. Kwong">
                 <div class="profile-description">
-                    <p class="name">Name</p>
-                    <p class="position">Position</p>
-                    <p class="description">Description</p>
+                    <p class="name">John Chris T. Kwong</p>
+                    <p class="position">S&T Fellow I</p>
                 </div>
             </div>
 
-            <div class="profile-card">
-                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+            <div class="profile-card" onclick="showStaffModal('charmaine-manalo')">
+                <img class="profile-pic modal-trigger" src="../images/management_ann-manalo.jpg" alt="Charmaine Ann Manalo">
                 <div class="profile-description">
-                    <p class="name">Name</p>
-                    <p class="position">Position</p>
-                    <p class="description">Description</p>
+                    <p class="name">Charmaine Ann S. Manalo</p>
+                    <p class="position">Project Technical Specialist IV - Senior Project Manager</p>
                 </div>
             </div>
 
-            <div class="profile-card">
-                <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
+            <div class="profile-card" onclick="showStaffModal('chelsea-abellana')">
+                <img class="profile-pic modal-trigger" src="../images/management_chelsea-abellana.jpg" alt="Chelsea Rica M. Abellana">
                 <div class="profile-description">
-                    <p class="name">Name</p>
-                    <p class="position">Position</p>
-                    <p class="description">Description</p>
+                    <p class="name">Chelsea Rica M. Abellana</p>
+                    <p class="position">Project Technical Assistant VI - Junior Technology, Policy, and Sustainability Officer</p>
                 </div>
             </div>
         </div>
-
-
-
+<!--
         <div class="card" style="background-image: url('../images/stock-2.jpg');">
             <div class="profile-card">
                 <img class="profile-pic modal-trigger" src="../images/josh.jpeg" alt="Name of Team Member">
@@ -87,8 +82,16 @@
                     <p class="description">Description</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
+    <div id="staffModal" class="staff-modal">
+        <div class="staff-modal-content">
+            <span class="close" onclick="closeStaffModal()">&times;</span>
+            <div id="staffModalBody">
+                <!-- Staff details will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
     <div id="footer"></div>
 </body>
 

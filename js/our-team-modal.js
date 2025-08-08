@@ -1,5 +1,5 @@
 function showStaffModal(staffId) {
-    const staff = aiTeamData[staffId] || managementData[staffId];
+    const staff = aiTeamData[staffId] || managementData[staffId] || lakehouseTeamData[staffId] || platformTeamData[staffId] || internsData[staffId];
     if (!staff) return;
     
     const modalBody = document.getElementById('staffModalBody');
@@ -7,23 +7,24 @@ function showStaffModal(staffId) {
         <div class="modal-row">
             <div class="modal-column left">
                 <img src="${staff.image}" alt="${staff.name}" class="staff-image">
-                <div class="contact-info">
-                    <p>
+                <div class="personal-info">
                     <h2>${staff.name}</h2>
-                <h3>${staff.position}</h3>
-                    </p>
+                    <h3>${staff.position}</h3>
                 </div>
             </div>
             <div class="modal-column right">
-                
-                <p><strong>Education:</strong> ${staff.education || 'N/A'}</p>
-                <p><strong>Projects:</strong> ${staff.projects || 'N/A'}</p>
-                <p><strong>Tenure:</strong> ${staff.tenure || 'N/A'}</p>
-                <p><strong>Skills:</strong> ${staff.skills || 'N/A'}</p>
-                <p><strong>Motto:</strong> ${staff.motto || 'N/A'}</p>
-                <strong> Contact:</strong>
-                    <a href="mailto:${staff.email}">${staff.email}</a>
-                    <a href="${staff.linkedin}" target="_blank">LinkedIn</a>
+                <div class="profile">
+                    <h2>Profile</h2>
+                    <p><strong>Education:</strong> ${staff.education || 'N/A'}</p>
+                    <p><strong>Projects:</strong> ${staff.projects || 'N/A'}</p>
+                    <p><strong>Tenure:</strong> ${staff.tenure || 'N/A'}</p>
+                    <p><strong>Skills:</strong> ${staff.skills || 'N/A'}</p>
+                    <p><strong>Motto:</strong> ${staff.motto || 'N/A'}</p>
+                </div>
+                <div class="contact-info">
+                    <p><strong> Email:</strong> <a href="mailto:${staff.email}">${staff.email}</a></p>
+                    <p><strong> LinkedIn:</strong> <a href="${staff.linkedin}" target="_blank">${staff.name}</a></p>
+                </div>
             </div>
         </div>
 
@@ -210,3 +211,17 @@ const platformTeamData = {
         email: 'maryjane.alpad@asti.dost.gov.ph',   
     }
 }   
+
+const internsData = {
+    'joshua-birad': {
+        name: 'Joshua Birad',
+        position: 'Intern',
+        image: '../images/josh.jpeg',
+        education: 'Technological University of the Philippines',
+        tenure: '4 months',
+        projects: 'GATES',
+        skills: 'Data Cleaning, Git, Front-end Development',
+        email: 'joshuabirad17@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/joshua-birad-295015165/',
+    }
+}
