@@ -1,8 +1,7 @@
-/* Slideshow styles */
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin: 0;
     overflow: hidden;
     background-color: #000;
