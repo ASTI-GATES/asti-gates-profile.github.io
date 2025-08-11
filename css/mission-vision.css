@@ -1,3 +1,4 @@
+/*************  ✨ Windsurf Command 🌟  *************/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
 
@@ -9,17 +10,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Header and Footer styling (example, adjust to your colors) */
-header,
 footer {
-  background-color: #252732;
-  color: white;
-  padding: 1rem;
-}
-
-/* No sticky footer */
-main {
-  width: 100%;
+  position: bottom;
+  bottom: 0;
 }
 
 /* Mission & Vision container */
@@ -49,14 +42,14 @@ main {
   flex: 1 1 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   /* center horizontally */
   justify-content: flex-start;
   /* center vertically */
   position: relative;
   min-height: 700px;
-  padding: 10rem 1rem;
-  box-sizing: border-box;
+  padding: 8rem 1rem;
+  box-sizing: border-box auto;
 }
 
 /* Background overlays */
@@ -67,7 +60,7 @@ main {
   opacity: 0.6;
   z-index: 1;
   /* behind text */
-  margin: 0;
+  margin-bottom: 1;
   height: 100%;
 }
 
@@ -82,79 +75,27 @@ main {
 /* Headings */
 .mission-vision .text-wrapper,
 .mission-vision .text-wrapper-2 {
-<<<<<<< HEAD
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
-=======
-  position: relative;
-  width: 70%;
-  /* Reduced from 90% */
-  max-width: 400px;
-  /* Reduced from 500px */
-  margin: 10vh auto;
-  vertical-align: top;
->>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
+  font-size: 70px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  margin: 0 0 1rem 0;
   z-index: 2;
   position: relative;
+  padding-top: 0%
 }
 
+/* Responsive footer styling */
 /* Paragraph text */
 .mission-vision .p,
 .mission-vision .text-wrapper-3 {
-  font-size: clamp(2.5rem, 2.5vw, 2rem);
+  font-size: 30px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
   margin: 0;
-  padding: 5rem 1rem;
+  padding: 1rem 1rem;
   z-index: 3;
   position: relative;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 1024px) {
-
-  .mission-vision .group,
-  .mission-vision .overlap-wrapper {
-    flex: 1 1 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  .mission-vision .text-wrapper,
-  .mission-vision .text-wrapper-2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-  }
-
-  .mission-vision .p,
-  .mission-vision .text-wrapper-3 {
-    font-size: clamp(1rem, 3vw, 1.6rem);
-  }
-}
-
-@media screen and (max-width: 480px) {
-
-<<<<<<< HEAD
-=======
-  .mission-vision .group,
-  .mission-vision .overlap-wrapper {
-    min-height: 250px;
-  }
-
->>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
-  .mission-vision .text-wrapper,
-  .mission-vision .text-wrapper-2 {
-    width: 95%;
-  }
-
-  .mission-vision .p,
-  .mission-vision .text-wrapper-3 {
-    font-size: clamp(1rem, 3vw, 1.4rem);
-  }
 }

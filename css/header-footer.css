@@ -82,8 +82,6 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* Navbar Active State Styles */
 .navbar-nav .nav-link {
     position: relative;
@@ -95,15 +93,13 @@ nav ul li a:hover {
     font-weight: 500;
     transition: all 0.3s ease;
     background: transparent;
-=======
-=======
->>>>>>> 4bb4d864e1bd8fdbf4f1fff602b513130626ef07
+}
+
 .navbar a.active {
     border-bottom: 3px solid #e8cd36;
     color: #e8cd36;
     font-weight: bold;
-<<<<<<< HEAD
->>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
+
 }
 
 .navbar-nav .nav-link:hover {
@@ -150,8 +146,6 @@ nav ul li a:hover {
     background: linear-gradient(90deg, #f59e0b, #f97316);
     border-radius: 2px;
     box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
-=======
->>>>>>> 4bb4d864e1bd8fdbf4f1fff602b513130626ef07
 }
 
 
@@ -267,16 +261,8 @@ nav a.active {
 footer {
     background-color: #1f1f2e;
     color: white;
-    padding: 40px 30px;
-<<<<<<< HEAD
-<<<<<<< HEAD
+    padding: 3px;
     margin-top: 0;
-=======
-    margin-top: 60px;
->>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
-=======
-    margin-top: 60px;
->>>>>>> 4bb4d864e1bd8fdbf4f1fff602b513130626ef07
     font-weight: 300;
     font-family: "Open Sans", sans-serif;
 }
@@ -285,8 +271,9 @@ footer {
 footer a {
     color: lch(100% 0.01 296.81);
     text-decoration: none;
-    font-weight: 300;
-    letter-spacing: 0.3px;
+    font-weight: 200;
+    letter-spacing: 0px;
+    line-height: 1.2;
     transition: color 0.3s ease;
 }
 
@@ -294,12 +281,14 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
 /* Grid layout with tighter spacing */
 .footer-columns {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: px;
-    /* Reduced gap */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
     max-width: 1200px;
     margin: auto;
     width: 100%;
@@ -315,7 +304,7 @@ footer h4 {
 /* Lists */
 footer ul {
     list-style: none;
-    padding-left: 0;
+    padding-left: 10px;
     margin: 0;
 }
 
@@ -328,7 +317,7 @@ footer li {
 footer p {
     font-weight: 300;
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 /* Seal section: image beside text */
@@ -337,25 +326,30 @@ footer p {
     align-items: flex-start;
     max-width: 1200px;
     min-width: 250px;
+    margin: 0;
+    padding: 3px;
 }
 
 .footer-seal-section img {
     flex-shrink: 0;
-    height: 80px;
+    height: 180px;
     width: auto;
     display: block;
-    margin: 0;
+    margin: 0 20px 0 -100px;
     padding: 0;
 }
 
 .footer-seal-section div {
     flex: 1;
+    margin-left: 0px;
 }
+
+
 
 body,
 html {
     height: 100%;
-    margin: 0;
+    margin: 30px, 40px;
     padding: 0;
 }
 
