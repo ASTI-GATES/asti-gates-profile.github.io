@@ -82,7 +82,17 @@ main {
 /* Headings */
 .mission-vision .text-wrapper,
 .mission-vision .text-wrapper-2 {
+<<<<<<< HEAD
   font-size: clamp(2.5rem, 4vw, 3.5rem);
+=======
+  position: relative;
+  width: 70%;
+  /* Reduced from 90% */
+  max-width: 400px;
+  /* Reduced from 500px */
+  margin: 10vh auto;
+  vertical-align: top;
+>>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   color: #ffffff;
@@ -130,6 +140,14 @@ main {
 
 @media screen and (max-width: 480px) {
 
+<<<<<<< HEAD
+=======
+  .mission-vision .group,
+  .mission-vision .overlap-wrapper {
+    min-height: 250px;
+  }
+
+>>>>>>> 693b837751a3edfcb59ce04f9310700176906f30
   .mission-vision .text-wrapper,
   .mission-vision .text-wrapper-2 {
     width: 95%;
