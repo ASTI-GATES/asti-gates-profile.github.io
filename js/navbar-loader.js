@@ -1,21 +1,36 @@
 
-// Unified Navbar Loader - Works for both root and subfolder pages
-// Combines navbar loading, active highlighting, search functionality, and footer loading
+const SITE_BASE = '/asti-gates-profile.github.io/asti-gates-profile.github.io';
 
-// Determine the correct path based on current location
 const currentPath = window.location.pathname;
 const isInSubfolder = currentPath.includes('/html/');
 const componentsPath = isInSubfolder ? '../components/' : 'components/';
 
-// Function to load HTML components
+
+function resolveSiteUrl(href) {
+    if (!href) return href;
+    if (href.startsWith('http')) return href;
+
+    // Normalize SITE_BASE to have no leading/trailing slash (we'll add it below if needed)
+    const baseClean = SITE_BASE ? SITE_BASE.replace(/^\/+|\/+$/g, '') : '';
+    const basePrefix = baseClean ? `/${baseClean}/` : '/';
+
+    // Remove leading slashes from href so URL resolves consistently
+    const raw = href.replace(/^\/+/, '');
+
+    // Use URL to compute absolute href against origin + basePrefix
+    const resolved = new URL(raw, window.location.origin + basePrefix);
+    return resolved.href; // full absolute URL (includes origin)
+}
+
 function loadComponent(elementId, fileName) {
     console.log(`Loading ${fileName} into #${elementId}`);
-    
+
     const element = document.getElementById(elementId);
     if (!element) {
         console.error(`Element with id "${elementId}" not found`);
         return Promise.reject(`Element #${elementId} not found`);
     }
+
 
     return fetch(`${componentsPath}${fileName}`)
         .then(response => {
@@ -39,24 +54,31 @@ function loadComponent(elementId, fileName) {
         });
 }
 
-// Function to update active navigation link
+function fixNavbarLinks() {
+    document.querySelectorAll('#navbar a').forEach(link => {
+        let href = link.getAttribute('href');
+        if (!href) return;
+        const abs = resolveSiteUrl(href);
+        link.setAttribute('href', abs);
+    });
+}
+
+
 function updateActiveNavLink() {
     console.log('Updating active nav link');
-    
+
     const currentPage = currentPath.split('/').pop() || 'index.html';
     console.log('Current page:', currentPage);
 
-    // Find all navigation links
     const navLinks = document.querySelectorAll('#navbar nav ul li a');
     console.log('Found nav links:', navLinks.length);
 
     navLinks.forEach(link => {
-        const href = link.getAttribute('href');
+
+        const href = link.getAttribute('href') || link.href || '';
         const li = link.closest('li');
-        
-        // Check if the link href ends with the current page
-        if (href && href.endsWith(currentPage)) {
-            console.log('Setting active:', href);
+
+        if (href.endsWith(currentPage)) {
             link.classList.add('active');
             if (li) li.classList.add('active');
         } else {
@@ -66,7 +88,6 @@ function updateActiveNavLink() {
     });
 }
 
-// Function to initialize search with hardcoded suggestions from navbar.html
 function initializeHardcodedSearch() {
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
@@ -79,10 +100,9 @@ function initializeHardcodedSearch() {
 
     console.log('Initializing hardcoded search functionality');
 
-    // Show/filter suggestions based on input
-    searchInput.addEventListener('input', function() {
+    searchInput.addEventListener('input', function () {
         const searchTerm = this.value.toLowerCase().trim();
-        
+
         if (!searchTerm) {
             searchResults.style.display = 'none';
             return;
@@ -90,10 +110,10 @@ function initializeHardcodedSearch() {
 
         let hasMatches = false;
         allSuggestions.forEach(suggestion => {
-            const searchData = suggestion.getAttribute('data-search');
-            const title = suggestion.getAttribute('data-title');
-            
-            if (searchData && title && (searchData.includes(searchTerm) || title.toLowerCase().includes(searchTerm))) {
+            const searchData = suggestion.getAttribute('data-search') || '';
+            const title = suggestion.getAttribute('data-title') || '';
+
+            if ((searchData && searchData.includes(searchTerm)) || (title && title.toLowerCase().includes(searchTerm))) {
                 suggestion.style.display = 'block';
                 hasMatches = true;
             } else {
@@ -104,65 +124,41 @@ function initializeHardcodedSearch() {
         searchResults.style.display = hasMatches ? 'block' : 'none';
     });
 
-    // Handle clicking on suggestions
     allSuggestions.forEach(suggestion => {
-        suggestion.addEventListener('click', function() {
+        suggestion.style.cursor = 'pointer';
+        suggestion.style.padding = '10px';
+        suggestion.style.borderBottom = '1px solid #eee';
+
+        suggestion.addEventListener('click', function () {
             const url = this.getAttribute('data-url');
             if (url) {
-                // Adjust path based on current location
-                let finalUrl = url;
-                
-                // For root pages, don't add "../"
-                if (!isInSubfolder && url.startsWith('../')) {
-                    finalUrl = url.substring(3); // Remove "../"
-                } else if (isInSubfolder && !url.startsWith('../')) {
-                    finalUrl = `../${url}`;
-                }
-                
+                const finalUrl = resolveSiteUrl(url);
                 window.location.href = finalUrl;
             }
         });
 
-        // Add hover styling
-        suggestion.style.cursor = 'pointer';
-        suggestion.style.padding = '10px';
-        suggestion.style.borderBottom = '1px solid #eee';
-        
-        suggestion.addEventListener('mouseenter', function() {
+        suggestion.addEventListener('mouseenter', function () {
             this.style.backgroundColor = '#f5f5f5';
         });
-        
-        suggestion.addEventListener('mouseleave', function() {
+        suggestion.addEventListener('mouseleave', function () {
             this.style.backgroundColor = 'white';
         });
     });
 
-    // Handle search button click
     const searchButton = document.querySelector('.search-container button');
     if (searchButton) {
-        searchButton.addEventListener('click', function(e) {
+        searchButton.addEventListener('click', function (e) {
             e.preventDefault();
             const searchTerm = searchInput.value.toLowerCase().trim();
-            
             if (!searchTerm) return;
 
-            // Find first matching suggestion
             for (let suggestion of allSuggestions) {
-                const searchData = suggestion.getAttribute('data-search');
-                const title = suggestion.getAttribute('data-title');
-                
-                if (searchData && title && (searchData.includes(searchTerm) || title.toLowerCase().includes(searchTerm))) {
+                const searchData = suggestion.getAttribute('data-search') || '';
+                const title = suggestion.getAttribute('data-title') || '';
+                if ((searchData && searchData.includes(searchTerm)) || (title && title.toLowerCase().includes(searchTerm))) {
                     const url = suggestion.getAttribute('data-url');
                     if (url) {
-                        let finalUrl = url;
-                        
-                        // For root pages, don't add "../"
-                        if (!isInSubfolder && url.startsWith('../')) {
-                            finalUrl = url.substring(3); // Remove "../"
-                        } else if (isInSubfolder && !url.startsWith('../')) {
-                            finalUrl = `../${url}`;
-                        }
-                        
+                        const finalUrl = resolveSiteUrl(url);
                         window.location.href = finalUrl;
                         return;
                     }
@@ -171,30 +167,27 @@ function initializeHardcodedSearch() {
         });
     }
 
-    // Hide suggestions when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (!e.target.closest('.search-container')) {
             searchResults.style.display = 'none';
         }
     });
 
-    // Show suggestions again when focusing on input
-    searchInput.addEventListener('focus', function() {
+    searchInput.addEventListener('focus', function () {
         const searchTerm = this.value.toLowerCase().trim();
         if (searchTerm) {
-            // Re-trigger the input event to show filtered results
             const event = new Event('input');
             this.dispatchEvent(event);
         }
     });
 }
 
-// Main initialization function
+// Init
 function initializeNavbar() {
-    // Load navbar first
     loadComponent('navbar', 'navbar.html')
         .then(() => {
-            // After navbar loads, set up functionality
+            // IMPORTANT: fix links first, then run active-link detection and search init
+            fixNavbarLinks();
             updateActiveNavLink();
             initializeHardcodedSearch();
         })
@@ -202,7 +195,6 @@ function initializeNavbar() {
             console.error('Failed to initialize navbar:', error);
         });
 
-    // Load footer if element exists
     const footerElement = document.getElementById('footer');
     if (footerElement) {
         loadComponent('footer', 'footer.html')
@@ -212,10 +204,9 @@ function initializeNavbar() {
     }
 }
 
-// Auto-initialize when DOM is ready or script loads
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initializeNavbar);
 } else {
-    // DOM already loaded
     initializeNavbar();
 }
+
