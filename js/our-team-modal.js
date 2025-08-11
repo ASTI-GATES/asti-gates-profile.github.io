@@ -107,10 +107,32 @@ const aiTeamData = {
         //motto: '"Not throwing away my shot!" - Alexander Hamilton',
         email: 'nribera@up.edu.ph',
         linkedin: 'https://www.linkedin.com/in/norbert-john-ibera-b07926284',
+    },
+    'john-dumalag': {
+        name: 'John Bart C. Dumalag',
+/*        position: 'S&T Fellow I',
+        image: '../images/management_john-chris-kwong.jpg',
+        education: 'MS ECE',
+        tenure: '4 years',
+        projects: 'REIINN, GATES',
+        //skills: ''     
+        email: 'johnchris.kwong@asti.dost.gov.ph',
+        linkedin: 'https://www.linkedin.com/in/kwongjohnc/',*/
     }
 };
 
 const managementData = {
+    'alvin-retamar': {
+        name: 'Alvin E. Retamar',
+        /*position: 'S&T Fellow I',
+        image: '../images/management_john-chris-kwong.jpg',
+        education: 'MS ECE',
+        tenure: '4 years',
+        projects: 'REIINN, GATES',
+        //skills: ''     
+        email: 'johnchris.kwong@asti.dost.gov.ph',
+        linkedin: 'https://www.linkedin.com/in/kwongjohnc/',*/
+    },
     'john-chris-kwong': {
         name: 'John Chris Kwong',
         position: 'S&T Fellow I',
@@ -145,6 +167,17 @@ const managementData = {
         //motto: '"Not throwing away my shot!" - Alexander Hamilton',
         email: 'chelsearica.abellana@asti.dost.gov.ph',
         linkedin: 'http://www.linkedin.com/in/chelseabellana',
+    },
+    'marvie-evangelista': {
+        /*name: 'John Chris Kwong',
+        position: 'S&T Fellow I',
+        image: '../images/management_john-chris-kwong.jpg',
+        education: 'MS ECE',
+        tenure: '4 years',
+        projects: 'REIINN, GATES',
+        //skills: ''     
+        email: 'johnchris.kwong@asti.dost.gov.ph',
+        linkedin: 'https://www.linkedin.com/in/kwongjohnc/',*/
     }
 }
 
@@ -209,6 +242,28 @@ const platformTeamData = {
         projects: 'GATES, ON-IDLE, COARE, NetMesh',
         strengths: 'Attention to Detail, Analytical Thinking, Team Collaboration',
         email: 'maryjane.alpad@asti.dost.gov.ph',   
+    },
+    'albert-francisco': {
+        name: 'Albert A. Francisco',
+        /*position: 'S&T Fellow I',
+        image: '../images/management_john-chris-kwong.jpg',
+        education: 'MS ECE',
+        tenure: '4 years',
+        projects: 'REIINN, GATES',
+        //skills: ''     
+        email: 'johnchris.kwong@asti.dost.gov.ph',
+        linkedin: 'https://www.linkedin.com/in/kwongjohnc/',*/
+    },
+    'nathaniel-mayquez': {
+        name: 'Nathaniel R. Mayquez',
+        /*position: 'S&T Fellow I',
+        image: '../images/management_john-chris-kwong.jpg',
+        education: 'MS ECE',
+        tenure: '4 years',
+        projects: 'REIINN, GATES',
+        //skills: ''     
+        email: 'johnchris.kwong@asti.dost.gov.ph',
+        linkedin: 'https://www.linkedin.com/in/kwongjohnc/',*/
     }
 }   
 
@@ -223,5 +278,49 @@ const internsData = {
         skills: 'Data Cleaning, Git, Front-end Development',
         email: 'joshuabirad17@gmail.com',
         linkedin: 'https://www.linkedin.com/in/joshua-birad-295015165/',
+    },
+    'janelle-lam': {
+        name: 'Janelle Lam',
+        position: 'Intern',
+        image: '../images/janelle.jpeg',
+        education: 'BS Electronics Engineering - De La Salle University',
+        tenure: '2 months',
+        projects: 'GATES',
+        skills: 'Python',
+        email: 'janellelam04@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/janelle-claire-lam/',
+    },
+    'nathan-lim': {
+        name: 'Nathan Lim',
+        position: 'Intern',
+        image: '../images/nathan.jpeg',
+        education: 'Technological University of the Philippines',
+        tenure: '4 months',
+        projects: 'GATES',
+        skills: 'Data Analysis, Git, Front-end Development',
+        email: 'nathanlim17@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/nathan-lim-295015165/',
+    },
+    'matt-ormilon': {
+        name: 'Matthew Ormilon',
+        position: 'Intern',
+        image: '../images/matthew.jpeg',
+        education: 'Technological University of the Philippines',
+        tenure: '4 months',
+        projects: 'GATES',
+        skills: 'Data Analysis, Git, Front-end Development',
+        email: 'matthewormilon17@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/matthew-ormilon-295015165/',
+    },
+    'pauline-young': {
+        name: 'Pauline Young',
+        position: 'Intern',
+        image: '../images/pauline.jpeg',
+        education: 'Technological University of the Philippines',
+        tenure: '4 months',
+        projects: 'GATES',
+        skills: 'Data Analysis, Git, Front-end Development',
+        email: 'paulineyoung17@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/pauline-young-295015165/',
     }
 }
