@@ -1,5 +1,5 @@
 
-const SITE_BASE = '/asti-gates-profile.github.io';
+const SITE_BASE = '/asti-gates-profile.github.io/asti-gates-profile.github.io';
 
 const currentPath = window.location.pathname;
 const isInSubfolder = currentPath.includes('/html/');
@@ -209,3 +209,4 @@ if (document.readyState === 'loading') {
 } else {
     initializeNavbar();
 }
+
