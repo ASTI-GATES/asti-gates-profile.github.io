@@ -1,30 +1,26 @@
 .stats-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
     gap: 15px;
     width: 100%;
     max-width: 100%;
+    justify-items: center;
 }
 
 .stat-card {
-    background: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 50%;
-    margin-top: 45px;
-    margin-left: 30px;
-    /* Make the card circular */
+    background-color: white;
+    padding: 5px;
+    border-radius: 10%;
+    margin-block: 20px auto;
     text-align: center;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
-    height: 180px;
-    width: 180px;
-    /* Ensure width and height are equal for a circle */
+    height: 200px;
+    width: 200px;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: border-color 0.3s ease;
-    /* Transition for border color */
-    border: 5px solid transparent;
 }
 
 .stat-card:nth-child(1) {
@@ -33,17 +29,14 @@
 
 .stat-card:nth-child(2) {
     border-color: #f4ecac;
-
 }
 
 .stat-card:nth-child(3) {
-    border-color: #cbd0f7
-        /* Example color */
+    border-color: #cbd0f7;
 }
 
 .stat-card:nth-child(4) {
-    border-color: #f7c8c8
-        /* Example color */
+    border-color: #f7c8c8;
 }
 
 .stat-card h4 {
@@ -63,5 +56,4 @@
     box-shadow: 0 8px 12px -1px rgba(0, 0, 0, 0.2), 0 4px 8px -1px rgba(0, 0, 0, 0.12);
     transform: translateY(-2px);
     background-color: #ffffff;
-    /* Change color on hover */
 }
