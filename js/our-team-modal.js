@@ -319,8 +319,8 @@ const internsData = {
         education: 'BS Electronics Engineering - Polytechnic University of the Philippines',
         tenure: '1 month',
         projects: 'GATES',
-        skills: 'Data Analysis, Git, Front-end Development',
-        email: 'paulineyoung17@gmail.com',
-        linkedin: 'https://www.linkedin.com/in/pauline-young-295015165/',
+        skills: 'hehe wala pa',
+        email: ' angeleepaulineyoung@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/pauline-angelee-young-691930324/',
     }
 }
