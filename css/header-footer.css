@@ -13,8 +13,6 @@
     font-size: 20px;
 }
 
-
-
 .logo {
     font-weight: bold;
     font-size: 1.5rem;
@@ -22,10 +20,8 @@
 
 .logo img {
     height: 40px;
-    /* Or any fixed size */
     width: auto;
 }
-
 
 /* Navbar container */
 .navbar {
@@ -35,15 +31,14 @@
     background-color: #1c1d25;
     padding: 20px 40px;
     color: white;
+    position: relative;
 }
-
 
 /* Logo container */
 .logo {
     display: flex;
     align-items: center;
     gap: 12px;
-    /* spacing between logo and text */
 }
 
 .logo a {
@@ -69,7 +64,6 @@
     font-size: 20px;
     color: white;
 }
-
 
 nav ul {
     display: flex;
@@ -99,7 +93,6 @@ nav ul li a:hover {
     border-bottom: 3px solid #e8cd36;
     color: #e8cd36;
     font-weight: bold;
-
 }
 
 .navbar-nav .nav-link:hover {
@@ -148,7 +141,6 @@ nav ul li a:hover {
     box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
 }
 
-
 nav a {
     color: white;
     text-decoration: none;
@@ -166,8 +158,20 @@ nav a.active {
     font-weight: bold;
 }
 
+/* Hamburger button - hidden by default */
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 5px;
+}
 
-
+.navbar-toggle::before {
+    content: "☰";
+}
 
 /* Search bar styles */
 .search-container {
@@ -257,7 +261,6 @@ nav a.active {
     font-size: 12px;
 }
 
-
 footer {
     background-color: #1f1f2e;
     color: white;
@@ -281,11 +284,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
 /* Grid layout with tighter spacing */
 .footer-columns {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
@@ -299,6 +302,8 @@ footer h4 {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 1.1rem;
+    padding-left: 5px;
+    padding-right: 10px;
 }
 
 /* Lists */
@@ -318,6 +323,7 @@ footer p {
     font-weight: 300;
     font-size: 0.9rem;
     line-height: 1.2;
+    padding-left: 0px;
 }
 
 /* Seal section: image beside text */
@@ -344,12 +350,10 @@ footer p {
     margin-left: 0px;
 }
 
-
-
 body,
 html {
     height: 100%;
-    margin: 30px, 40px;
+    margin: 0;
     padding: 0;
 }
 
@@ -359,15 +363,113 @@ body {
     flex-direction: column;
 }
 
-/* Optional: Responsive stacking */
+/* MOBILE RESPONSIVE NAVBAR - Option 1: Compact Layout */
 @media (max-width: 768px) {
-    .footer-columns {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .navbar {
+        padding: 10px 15px;
+        gap: 10px;
     }
 
-    .footer-seal-section {
-        flex-direction: column;
-        align-items: flex-start;
+    /* Smaller logo on mobile */
+    .logo span {
+        font-size: 16px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    /* Compact navigation */
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    /* Compact search bar */
+    .search-container input[type="text"] {
+        width: 120px;
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    .search-container input[type="text"]:focus {
+        width: 140px;
+    }
+
+    /* Hide hamburger since we're keeping everything visible */
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+/* MOBILE RESPONSIVE NAVBAR - Option 2: Horizontal Scrolling */
+@media (max-width: 480px) {
+    .navbar {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        padding: 10px 15px;
+        gap: 15px;
+    }
+
+    /* Prevent flex items from shrinking */
+    .logo,
+    nav,
+    .search-container {
+        flex-shrink: 0;
+    }
+
+    nav ul {
+        display: inline-flex;
+        min-width: max-content;
+        gap: 8px;
+    }
+
+    nav ul li {
+        flex-shrink: 0;
+    }
+
+    nav a {
+        padding: 6px 8px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    /* Keep search compact */
+    .search-container input[type="text"] {
+        width: 100px;
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+
+    .search-container input[type="text"]:focus {
+        width: 120px;
+    }
+}
+
+/* Ultra-compact for very small screens */
+@media (max-width: 380px) {
+    .navbar {
+        padding: 8px 10px;
+    }
+
+    .logo span {
+        display: none;
+        /* Hide logo text, keep only image */
+    }
+
+    nav a {
+        padding: 4px 6px;
+        font-size: 10px;
+    }
+
+    .search-container input[type="text"] {
+        width: 80px;
+        font-size: 10px;
     }
 }
