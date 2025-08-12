@@ -12,8 +12,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="icon" type="image/png" href="../images/Storm_Cloud.png">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/about-gates.css">
+    <script src="../js/components.js" defer></script>
+    <script src="../js/redirect.js"></script>
+
+    <link rel="icon" type="image/png" href="../images/asti-logo.png">
     <script src="../js/navbar-loader.js" defer></script>
+    <script src="../js/search.js" defer></script>
+
+
+    <link rel="icon" type="image/png" href="../images/asti-logo.png">
+    <script src="../js/navbar-loader.js" defer defer></script>
+    <script src="../js/search.js" defer></script>
+    <script src="../js/page-indicator.js" defer></script>
     <script src="../js/dashboard.js"></script>
     <script src="../https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="../https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -24,7 +36,6 @@
     <link rel="stylesheet" href="../css/dashboard.css" />
     <link rel="stylesheet" href="../css/dashboard-widget.css" />
     <script src="../js/dashboard-widget.js" defer></script>
-    <script src="../js/search.js" defer></script>
 
 </head>
 </head>
@@ -45,11 +56,10 @@
         <br>
 
         <section class="dashboard-section">
-
             <div class="dashboard-content">
-                <div class="chart-card">
+                <div class="chart-card donut-card">
                     <h3>GATES Teams</h3>
-                    <div class="chart-container">
+                    <div class="chart-container donut-container">
                         <canvas id="teamsChart"></canvas>
                     </div>
                     <div class="teams-legend">
@@ -76,7 +86,9 @@
                     </div>
                 </div>
 
-                <div class="chart-card large">
+
+
+                <div class="chart-card large line-card">
                     <div class="chart-header">
                         <h3>GATES Progress</h3>
                         <div class="chart-tabs">
@@ -103,7 +115,7 @@
                                 <div class="progress-bar">
                                     <div class="progress-fill ai-progress" data-progress="74"></div>
                                 </div>
-                                <span class="progress-percentage">74% Complete</span>
+                                <span class="progress-percentage">74% Correct</span>
                             </div>
                         </div>
                         <div class="progress-item">
@@ -115,7 +127,7 @@
                                 <div class="progress-bar">
                                     <div class="progress-fill website-progress" data-progress="52"></div>
                                 </div>
-                                <span class="progress-percentage">52% Complete</span>
+                                <span class="progress-percentage">52% Correct</span>
                             </div>
                         </div>
                         <div class="progress-item">
@@ -127,7 +139,6 @@
                                 <div class="progress-bar">
                                     <div class="progress-fill lakehouse-progress" data-progress="36"></div>
                                 </div>
-                                <span class="progress-percentage">36% Complete</span>
                             </div>
                         </div>
                     </div>
@@ -160,6 +171,8 @@
                             </p>
                         </div>
                     </div>
+
+
                 </div>
             </div>
 
