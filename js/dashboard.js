@@ -1,17 +1,15 @@
-// Dashboard JavaScript with Chart.js integration
-// Make sure to include Chart.js in your HTML: <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Initialize charts when the page loads
+
     initializeCharts();
     animateProgressBars();
 
-    // Add tab switching functionality
+
     initializeTabSwitching();
 });
 
 function initializeCharts() {
-    // Teams Doughnut Chart
     const teamsCtx = document.getElementById('teamsChart').getContext('2d');
     const teamsChart = new Chart(teamsCtx, {
         type: 'doughnut',
@@ -20,10 +18,10 @@ function initializeCharts() {
             datasets: [{
                 data: [52.1, 22.8, 13.9, 11.2],
                 backgroundColor: [
-                    '#3B82F6',  // Blue
-                    '#F59E0B',  // Amber
-                    '#10B981',  // Emerald  
-                    '#8B5CF6'   // Violet
+                    '#3B82F6',
+                    '#F59E0B',
+                    '#10B981',
+                    '#8B5CF6'
                 ],
                 borderWidth: 0,
                 cutout: '60%'
@@ -52,7 +50,7 @@ function initializeCharts() {
         }
     });
 
-    // Total Users Line Chart
+
     const usersCtx = document.getElementById('usersChart').getContext('2d');
 
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -138,7 +136,6 @@ function initializeCharts() {
 }
 
 function animateProgressBars() {
-    // Animate progress bars when they come into view
     const progressBars = document.querySelectorAll('.progress-fill');
 
     const observer = new IntersectionObserver((entries) => {
@@ -161,23 +158,21 @@ function initializeTabSwitching() {
 
     tabs.forEach(tab => {
         tab.addEventListener('click', function () {
-            // Remove active class from all tabs
+
             tabs.forEach(t => t.classList.remove('active'));
 
-            // Add active class to clicked tab
+
             this.classList.add('active');
 
-            // Here you could add logic to switch chart data based on the selected tab
+
             updateChartBasedOnTab(this.textContent);
         });
     });
 }
 
 function updateChartBasedOnTab(tabName) {
-    // This function can be expanded to update the chart data based on the selected tab
     console.log('Selected tab:', tabName);
 
-    // Example: Update chart data based on selected period
     const chart = Chart.getChart('usersChart');
 
     if (chart) {
@@ -205,7 +200,6 @@ function updateChartBasedOnTab(tabName) {
     }
 }
 
-// Additional utility functions
 function formatNumber(num) {
     if (num >= 1000) {
         return (num / 1000).toFixed(1) + 'k';
@@ -213,7 +207,6 @@ function formatNumber(num) {
     return num.toString();
 }
 
-// Export functions for external use
 window.dashboardUtils = {
     initializeCharts,
     animateProgressBars,
@@ -222,3 +215,22 @@ window.dashboardUtils = {
     formatNumber
 };
 
+const teamsChart = new Chart(teamsCtx, {
+    type: 'doughnut',
+    data: { /* your data */ },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { /* ... */ }
+    }
+});
+const lineChart = new Chart(lineCtx, {
+    type: 'line',
+    data: { /* your data */ },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { /* your plugins */ },
+        scales: { y: { min: 400, max: 500 } }
+    }
+});
