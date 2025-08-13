@@ -38,9 +38,9 @@ html {
 
 .team-description {
     font-family: "Open Sans Condensed";
-    font-size: 20px;
+    font-size: 1.1rem;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     max-width: fit-content;
     padding: 100px;
 }
