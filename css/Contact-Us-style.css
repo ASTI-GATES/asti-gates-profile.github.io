@@ -401,3 +401,12 @@
 .contact-table {
   margin: 0 auto;
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

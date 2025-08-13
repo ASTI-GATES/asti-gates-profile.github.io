@@ -41,8 +41,10 @@ html {
     font-size: 20px;
     text-align: center;
     font-weight: 500;
-    max-width: fit-content;
-    padding: 100px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 50px 40px; 
+    line-height: 1.6;
 }
 
 .background {
