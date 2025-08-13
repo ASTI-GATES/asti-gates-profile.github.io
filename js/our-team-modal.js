@@ -257,14 +257,14 @@ const platformTeamData = {
     },
     'nathaniel-mayquez': {
         name: 'Nathaniel R. Mayquez',
-        /*position: 'S&T Fellow I',
-        image: '../images/management_john-chris-kwong.jpg',
-        education: 'MS ECE',
-        tenure: '4 years',
-        projects: 'REIINN, GATES',
-        //skills: ''     
-        email: 'johnchris.kwong@asti.dost.gov.ph',
-        linkedin: 'https://www.linkedin.com/in/kwongjohnc/',*/
+        position: 'Project Technical Specialist II - Frontend Dev & UI/UX',
+        image: '../images/platform_nathaniel-mayquez.png',
+        education: 'IT',
+        tenure: '10 years',
+        projects: 'Finance, NetMesh, On-IDLE, GATES',
+        skills: 'Software testing, web design (figma), comms',
+        email: 'nathanielmayquez@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/nathaniel-mayquez-997549b6/',
     }
 }   
 
