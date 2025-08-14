@@ -109,15 +109,15 @@ const aiTeamData = {
         linkedin: 'https://www.linkedin.com/in/norbert-john-ibera-b07926284',
     },
     'john-dumalag': {
-        name: 'John Bart C. Dumalag',
-/*        position: 'S&T Fellow I',
-        image: '../images/management_john-chris-kwong.jpg',
-        education: 'MS ECE',
-        tenure: '4 years',
-        projects: 'REIINN, GATES',
-        //skills: ''     
-        email: 'johnchris.kwong@asti.dost.gov.ph',
-        linkedin: 'https://www.linkedin.com/in/kwongjohnc/',*/
+        name: 'John Bart Lovern Dumalag',
+        position: 'Project Technical Specialist IV',
+        image: '../images/ai-team_john_bart _dumalag',
+        education: 'BS Geodetic Engineering',
+        tenure: '6.5 years',
+        projects: 'DATOS, SARWAIS, SRA-WAP, GATES',
+        skills: 'RS/GIS, Python, Technical Writing'     
+        email: 'johnbartlovern.dumalag@asti.dost.gov.ph',
+        linkedin: 'johnbartlovern.dumalag@asti.dost.gov.ph',
     }
 };
 
@@ -169,15 +169,15 @@ const managementData = {
         linkedin: 'http://www.linkedin.com/in/chelseabellana',
     },
     'marvie-evangelista': {
-        /*name: 'John Chris Kwong',
-        position: 'S&T Fellow I',
+        name: 'Marvie Joy C. Evangelista',
+        position: 'PTA VI - Technical Writer',
         image: '../images/management_john-chris-kwong.jpg',
-        education: 'MS ECE',
-        tenure: '4 years',
-        projects: 'REIINN, GATES',
-        //skills: ''     
-        email: 'johnchris.kwong@asti.dost.gov.ph',
-        linkedin: 'https://www.linkedin.com/in/kwongjohnc/',*/
+        education: 'BA Communication',
+        tenure: '2 years and 2 months',
+        projects: 'IMPACT-SIMULA Project, ALaM Project, GATES P2',
+        skills: 'Project Coordination & Management, Stakeholder Engagement & External Coordination, Technical & Report Writing'     
+        email: 'marviejoy.evangelista@asti.dost.gov.ph',
+        linkedin: 'https://ph.linkedin.com/in/marvie-evangelista',
     }
 }
 
