@@ -171,7 +171,7 @@ const managementData = {
     'marvie-evangelista': {
         name: 'Marvie Joy C. Evangelista',
         position: 'PTA VI - Technical Writer',
-        image: '../images/management_john-chris-kwong.jpg',
+        image: '../images/management-Marvie_Evangelista.jpg',
         education: 'BA Communication',
         tenure: '2 years and 2 months',
         projects: 'IMPACT-SIMULA Project, ALaM Project, GATES P2',
