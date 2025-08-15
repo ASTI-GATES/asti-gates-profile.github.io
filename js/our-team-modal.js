@@ -23,7 +23,7 @@ function showStaffModal(staffId) {
                 </div>
                 <div class="contact-info">
                     <p><strong> Email:</strong> <a href="mailto:${staff.email}">${staff.email}</a></p>
-                    <p><strong> LinkedIn:</strong> <a href="${staff.linkedin}" target="_blank">${staff.name}</a></p>
+                    <p><strong> LinkedIn:</strong> ${staff.linkedin ? `<a href="${staff.linkedin}" target="_blank">${staff.name}</a>` : 'N/A'}</p>
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@ const aiTeamData = {
         education: 'BS Geodetic Engineering',
         tenure: '6.5 years',
         projects: 'DATOS, SARWAIS, SRA-WAP, GATES',
-        skills: 'RS/GIS, Python, Technical Writing'     
+        skills: 'RS/GIS, Python, Technical Writing',     
         email: 'johnbartlovern.dumalag@asti.dost.gov.ph',
         linkedin: 'johnbartlovern.dumalag@asti.dost.gov.ph',
     }
@@ -175,7 +175,7 @@ const managementData = {
         education: 'BA Communication',
         tenure: '2 years and 2 months',
         projects: 'IMPACT-SIMULA Project, ALaM Project, GATES P2',
-        skills: 'Project Coordination & Management, Stakeholder Engagement & External Coordination, Technical & Report Writing'     
+        skills: 'Project Coordination & Management, Stakeholder Engagement & External Coordination, Technical & Report Writing',
         email: 'marviejoy.evangelista@asti.dost.gov.ph',
         linkedin: 'https://ph.linkedin.com/in/marvie-evangelista',
     }
@@ -287,7 +287,7 @@ const internsData = {
         education: 'BS Electronics Engineering - De La Salle University',
         tenure: '2 months',
         projects: 'GATES',
-        skills: 'Python',
+        skills: 'Python, Front-End Development',
         email: 'janellelam04@gmail.com',
         linkedin: 'https://www.linkedin.com/in/janelle-claire-lam/',
     },
@@ -298,9 +298,9 @@ const internsData = {
         education: 'BS Electronics Engineering - De La Salle University',
         tenure: '2 months',
         projects: 'GATES',
-        skills: '',
-        email: '',
-        linkedin: '',
+        skills: 'Generative AI, Electronics, Computers, Back-end Coding',
+        email: 'nathangabriellim69@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/nathan-gabriel-lim-940427359',
     },
     'matt-ormilon': {
         name: 'Matthew Ormilon',
