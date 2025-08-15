@@ -75,14 +75,14 @@ const aiTeamData = {
     'christopher-belaos': {
         name: 'Christopher Belaos',
         position: 'Project Technical Specialist I - Data and Machine Learning Engineer',
-        image: '../images/ai-team_christopher-belaos.png',
+        image: '../images/ai-team_christopher-belaos.PNG',
         education: 'College Graduate',
         tenure: '3+ years',
         projects: 'iTANONG Project, GATES',
         skills: 'Developer',
         //motto: '"Not throwing away my shot!" - Alexander Hamilton',
         email: 'christopher.belaos@asti.dost.gov.ph',
-        linkedin: 'Christopher Belaos',
+        //linkedin: 'Christopher Belaos',
     },
     'jasper-castro': {
         name: 'Jasper Adrian Dwight V. Castro',
@@ -111,7 +111,7 @@ const aiTeamData = {
     'john-dumalag': {
         name: 'John Bart Lovern Dumalag',
         position: 'Project Technical Specialist IV',
-        image: '../images/ai-team_john_bart _dumalag',
+        image: '../images/ai-team_john_bart_dumalag.jpg',
         education: 'BS Geodetic Engineering',
         tenure: '6.5 years',
         projects: 'DATOS, SARWAIS, SRA-WAP, GATES',
