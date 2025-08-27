@@ -79,6 +79,19 @@
 
     "Management": [
         {
+            "alvin-retamar": {
+                "Name": "Alvin E. Retamar",
+                "Position": "Chief Science Research Specialist / Project Leader",
+                "Team": "Management Team",
+                "Educational Background": "Engineering / MBA / Technology Management",
+                "Tenure": "26 years",
+                "Projects": "GATES, Sensor Development and Deployment, Space Tech",
+                "Skills": "",
+                "Email": "ning@asti.dost.gov.ph",
+                "LinkedIn Profile": "N/A"
+            }
+        },
+        {
             "john-chris-kwong": {
                 "Name": "John Chris Kwong",
                 "Position": "S&T Fellow I",
