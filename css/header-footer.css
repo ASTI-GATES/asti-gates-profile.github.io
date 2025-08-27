@@ -18,11 +18,6 @@
     font-size: 1.5rem;
 }
 
-.logo img {
-    height: 40px;
-    width: auto;
-}
-
 /* Navbar container */
 .navbar {
     display: flex;
@@ -49,10 +44,24 @@
     color: white;
 }
 
-/* Logo image */
-.logo img {
+/* Logo image container */
+.logo .img-container {
     height: 40px;
-    width: auto;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+/* Logo image */
+.logo .img-container img {
+    width: 80%;
+    height: 80%;
     object-fit: contain;
     display: block;
 }
