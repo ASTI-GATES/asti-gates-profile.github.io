@@ -1,0 +1,331 @@
+{
+    "AI Team": [
+        {
+            "alyssa-ocampo": {
+                "Name": "Alyssa Patricia B. Ocampo",
+                "Position": "Project Technical Specialist I - Data and Machine Learning Engineer",
+                "Team": "AI Team",
+                "Educational Background": "Electronics Engineering - Polytechnic University of the Philippines",
+                "Tenure": "1 year 2 months",
+                "Projects": "May 2024-MAy 2025 iTANONG Project, May 2025-Current GATES",
+                "Skills": "Problem Solving",
+                "Email": "alyssapatricia.ocampo@asti.dost.gov.ph",
+                "LinkedIn Profile": "https://www.linkedin.com/in/alyssapatriciaocampo/",
+                "Motto": "\"Not throwing away my shot!\" - Alexander Hamilton",
+                "Image": "../images/ai-team-alyssa-ocampo.png"
+            }
+        },
+        {
+            "christopher-belaos": {
+                "Name": "Christopher Belaos",
+                "Position": "Project Technical Specialist III - AI Engineer",
+                "Team": "AI team",
+                "Educational Background": "College Graduate",
+                "Tenure": "3+ years",
+                "Projects": "iTANONG, GATES",
+                "Skills": "Developer",
+                "Email": "christopher.belaos@asti.dost.gov.ph",
+                "LinkedIn Profile": "Christopher Belaos",
+                "Motto": "N/A",
+                "Image": "../images/ai-team-christopher-belaos.PNG"
+            }
+        },
+        {
+            "norbert-ibera": {
+                "Name": "Norbert John Ibera",
+                "Position": "Project Technical Assistant IV; Jr. Data Engineer",
+                "Team": "AI team",
+                "Educational Background": "BS EE",
+                "Tenure": "1 week",
+                "Projects": "GATES",
+                "Skills": "Hardworking, Adaptive, kaya tumayo sa MRT no hands",
+                "Email": "nribera@up.edu.ph",
+                "LinkedIn Profile": "https://www.linkedin.com/in/norbert-john-ibera-b07926284",
+                "Motto": "N/A",
+                "Image": "../images/ai-team-norbert-ibera.jpeg"
+            }
+        },
+        {
+            "jasper-castro": {
+                "Name": "Jasper Adrian Dwight V. Castro",
+                "Position": "Project Technical Specialist IV - Natural Language Processing Engine",
+                "Team": "AI team",
+                "Educational Background": "Bachelor of Science in Electrical Engineering Major in Electronics Engineering",
+                "Tenure": "=$A$4+$B$4+$C$4",
+                "Projects": "1) **iTANONG**: A Natural Language Interface to Databases for Filipinos/n2) **Building the Lakehouse**: Establishing the DOST Lakehouse and GATE Using AI-Powered Machine Learning, Business Intelligence, and Predictive Analysis for Data-Driven Decision-Making",
+                "Skills": "-NLP\\n-ML\\n-Data Science",
+                "Email": "jasperadriandwight.castro@astidostgovph",
+                "LinkedIn Profile": "jasperadriandwightcastro",
+                "Motto": "When you want something, all the universe conspires in helping you to achieve it",
+                "Image": "../images/ai-team-jasper-castro.png"
+            }
+        },
+        {
+            "john-bart-dumalag": {
+                "Name": "John Bart Lovern Dumalag",
+                "Position": "Project Technical Specialist IV",
+                "Team": "AI Team",
+                "Educational Background": "BS Geodetic Engineering",
+                "Tenure": "6.5 years",
+                "Projects": "DATOS, SARWAIS, SRA-WAP, GATES",
+                "Skills": "RS/GIS, Python, Technical Writing",
+                "Email": "johnbartlovern.dumalag@asti.dost.gov.ph",
+                "LinkedIn Profile": "johnbartlovern.dumalag@asti.dost.gov.ph",
+                "Motto": "N/A",
+                "Image": "../images/ai-team-john-bart-dumalag.jpg"
+            }
+        }
+    ],
+
+    "Management": [
+        {
+            "john-chris-kwong": {
+                "Name": "John Chris Kwong",
+                "Position": "S&T Fellow I",
+                "Team": "Management Team",
+                "Educational Background": "MS ECE",
+                "Tenure": "4 Years",
+                "Projects": "REIINN Projects, GATES",
+                "Skills": "    ",
+                "Email": "johnchris.kwong@asti.dost.gov.ph",
+                "LinkedIn Profile": "https://www.linkedin.com/in/kwongjohnc/",
+                "Motto": "N/A",
+                "Image": "../images/management-john-chris-kwong.jpg"
+            }
+        },  
+        {
+            "chelsea-abellana": {
+                "Name": "Chelsea Rica M. Abellana",
+                "Position": "Project Technical Assistant VI - Junior Technology, Policy, and Sustainability Officer",
+                "Team": "Management Team",
+                "Educational Background": "BA Communication Arts, Major in Media Arts",
+                "Tenure": "3 years and 5 months",
+                "Projects": "GATES, MASID, Metbuoy+, STRIIIDER, arQ 2.0, SARwAIS, PREGINET, ULAT, FLASH",
+                "Skills": "Strategic Communications, Project Management, Public Engagement",
+                "Email": "chelsearica.abellana@asti.dost.gov.ph",
+                "LinkedIn Profile": "www.linkedin.com/in/chelseabellana",
+                "Motto": "N/A",
+                "Image": "../images/management-chelsea-abellana.jpg"
+            }
+        },
+        {
+            "ann-manalo": {
+                "Name": "Charmaine Ann S. Manalo",
+                "Position": "Project Technical Specialist IV / Senior Project Manager",
+                "Team": "Management",
+                "Educational Background": "B.S. Development Communication",
+                "Tenure": "10 years and 9 months",
+                "Projects": "Agromet, DEWS, Optimization, MASID, arQ 2.0, Metbuoy+, STRIIIDER, GATES P2",
+                "Skills": "1. Project management; 2. Budget planning; Stakeholder engagement",
+                "Email": "ann@asti.dost.gov.ph",
+                "LinkedIn Profile": "N/A",
+                "Motto": "N/A",
+                "Image": "../images/management-ann-manalo.jpg"
+            }
+        },
+        {
+            "marvie-evangelista": {
+                "Name": "Marvie Joy C. Evangelista",
+                "Position": "Project Technical Assistant VI - Technical Writer",
+                "Team": "Management Team",
+                "Educational Background": "BA Communication",
+                "Tenure": "2 years and 2 months",
+                "Projects": "IMPACT-SIMULA Project, ALaM Project, GATES P2",
+                "Skills": "Project Coordination & Management, Stakeholder Engagement & External Coordination, Technical & Report Writing",
+                "Email": "marviejoy.evangelista@asti.dost.gov.ph",
+                "LinkedIn Profile": "https://ph.linkedin.com/in/marvie-evangelista",
+                "Motto": "N/A",
+                "Image": "../images/management-marvie-evangelista.jpeg"
+            }
+        }
+    ],
+
+    "Lakehouse Team": [
+        {
+            "ruben-capuli": {
+                "Name": "Ruben L. Capuli III",
+                "Position": "Project Technical Assistant IV - Jr. Network Engineer",
+                "Team": "Network",
+                "Educational Background": "BS Electronics Engineering",
+                "Tenure": "2 weeks",
+                "Projects": "Project 2 - Lakehouse",
+                "Skills": "Adaptability",
+                "Email": "capuli.ruben3rd@gmail.com",
+                "LinkedIn Profile": "https://www.linkedin.com/in/ruben-capuli-iii-a471a7315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+                "Motto": "N/A",
+                "Image": "../images/lakehouse-ruben-capuli.jpg"
+            }   
+        },
+        {
+            "jean-jay-quitayen": {
+                "Name": "Jean Jay Quitayen ",
+                "Position": "Supervising Project Technical Specialist ",
+                "Team": "Data Lakehouse ",
+                "Educational Background": "B.S. Electronics Engineering",
+                "Tenure": "5 years",
+                "Projects": "GATES",
+                "Skills": "Python, Org-Mode, Arduino",
+                "Email": "jeanjay.quitayen@asti.dost.gov.ph",
+                "LinkedIn Profile": "jeanjayquitayen@gmail.com",
+                "Motto": "The greatest failure in life is the failure to try",
+                "Image": "../images/lakehouse-jean-jay-quitayen.jpeg"
+            }
+        }
+    ],
+
+    "Platform Team":[
+        {
+            "alaine-ramos": {
+                "Name": "Alaine Richelle C. Ramos",
+                "Position": "Project Technical Specialist III, Senior Backend Developer",
+                "Team": "Platform Team",
+                "Educational Background": "BS Computer Engineering (2015-2021), MEngg ArtificiaI Intelligence (2024-present), UP Diliman",
+                "Tenure": "1 year, 11 months",
+                "Projects": "MASID, GATES",
+                "Skills": "Technical documentation, Coding, Research, Sports",
+                "Email": "alainerichelle.ramos@asti.dost.gov.ph",
+                "LinkedIn Profile": "https://www.linkedin.com/in/alaine-richelle-ramos-879197181",
+                "Motto": "Consistency is the key.",
+                "Image": "../images/platform-alaine-ramos.png"
+            }
+        },
+        {
+            "christine-cureg": {
+                "Name": "Christine Shamah Cureg",
+                "Position": "Project Technical Specialist V",
+                "Team": "Visualization Team",
+                "Educational Background": "BSIT",
+                "Tenure": "7 years",
+                "Projects": "Optimization, MASID, MetBuoy, STRIIIIDER, COMPASS, GATES",
+                "Skills": "Overthink, Programming, Lover Girl",
+                "Email": "christineshamah.cureg@gmail.com",
+                "LinkedIn Profile": "https://www.linkedin.com/in/christine-shamah-c-5a83b5293/",
+                "Motto": "God Did",
+                "Image": "../images/platform-christine-cureg.jpg"
+            }   
+        },
+        {
+            "mary-jane-alpad": {
+                "Name": "Mary Jane Alpad",
+                "Position": "Project Technical Specialist III -  QA Engineer",
+                "Team": "Web",
+                "Educational Background": "BS Computer Engineering",
+                "Tenure": "2.7 years",
+                "Projects": "GATES, ON-IDLE, COARE, NetMesh",
+                "Skills": "Attention to Detail, Analytical Thinking, Team Collaboration",
+                "Email": "maryjane.alpad@asti.dost.gov.ph",
+                "LinkedIn Profile": "N/A",
+                "Motto": "N/A",
+                "Image": "../images/platform-jane-alpad.jpg"
+            }
+        },
+        {
+            "albert-francisco": {
+                "Name": "Albert Francisco",
+                "Position": "Project Technical Specialist V and Lead Web Developer",
+                "Team": "Platform Team",
+                "Educational Background": "BS comPUtEr sCiENcE maJOr In $0ftw@r3 dEvel0pM3n+",
+                "Tenure": "73 months",
+                "Projects": "MASID, STRIIIDER, GATES",
+                "Skills": "web development, mobile development, desktop development",
+                "Email": "albert.francisco@asti.dost.gov.ph",
+                "LinkedIn Profile": "hehe",
+                "Motto": "\"Life\"",
+                "Image": "../images/platform-albert-francisco.jpg"
+            }
+        },
+        {
+            "nathaniel-mayquez": {
+                "Name": "Nathaniel Mayquez",
+                "Position": "Project Technical Specialist II - Frontend Dev & UI/UX",
+                "Team": "web dev",
+                "Educational Background": "IT",
+                "Tenure": "10 years",
+                "Projects": "Finance, NetMesh, On-IDLE, GATES",
+                "Skills": "Software testing, web design (figma), comms",
+                "Email": "nathanielmayquez@gmail.com",
+                "LinkedIn Profile": "https://www.linkedin.com/in/nathaniel-mayquez-997549b6/",
+                "Motto": "N/A",
+                "Image": "../images/platform-nathaniel-mayquez.png"
+            }
+        }
+    ],
+
+    "Interns":[
+        {
+            "joshua-birad": {
+                "Name": "Joshua P. Birad",
+                "Position": "Intern",
+                "Team": "Interns",
+                "Educational Background": "Technological University of the Philippines",
+                "Tenure": "4 months",
+                "Projects": "GATES",
+                "Skills": "Data Cleaning, Git, Front-end Development",
+                "Email": "joshuabirad17@gmail.com",
+                "LinkedIn Profile": "https://www.linkedin.com/in/joshua-birad-295015165/",
+                "Motto": "N/A",
+                "Image": "../images/interns-gudetama.jpg"
+            }
+        },
+        {
+            "janelle-lam": {
+                "Name": "Janelle Lam",
+                "Position": "Intern",
+                "Team": "Interns",
+                "Educational Background": "BS Electronics Engineering - De La Salle University",
+                "Tenure": "3 months",
+                "Projects": "GATES",
+                "Skills": "Data Cleaning, Git, Front-end Development",
+                "Email": "janellelam04@gmail.com",
+                "LinkedIn Profile": "https://www.linkedin.com/in/janelle-claire-lam/",
+                "Motto": "N/A",
+                "Image": "../images/interns-pompom.jpg"
+            }
+        },
+        {
+            "nathan-lim": {
+                "Name": "Nathan Lim",
+                "Position": "Intern",
+                "Team": "Interns",
+                "Educational Background": "BS Electronics Engineering - De La Salle University",
+                "Tenure": "3 months",
+                "Projects": "GATES",
+                "Skills": "Generative AI, Electronics, Computers, Back-end Coding",
+                "Email": "nathangabriellim69@gmail.com",
+                "LinkedIn Profile": "https://www.linkedin.com/in/nathan-gabriel-lim-940427359",
+                "Motto": "N/A",
+                "Image": "../images/interns-chococat.jpg"
+            }
+        },
+        {
+            "matthew-ormilon": {
+                "Name": "Matthew Ormilon",
+                "Position": "Intern",
+                "Team": "Interns",
+                "Educational Background": "Ateneo de Manila University",
+                "Tenure": "2 months",
+                "Projects": "GATES",
+                "Skills": "N/A",
+                "Email": "N/A",
+                "LinkedIn Profile": "N/A",
+                "Motto": "N/A",
+                "Image": "../images/interns-keroppi.jpg"
+            }
+        },
+        {
+            "pauline-young": {
+                "Name": "Pauline Young",
+                "Position": "Intern",
+                "Team": "Interns",
+                "Educational Background": "BS Electronics Engineering - Polytechnic University of the Philippines",
+                "Tenure": "2 months",
+                "Projects": "GATES",
+                "Skills": "hehe wala pa",
+                "Email": "jangeleepaulineyoung@gmail.com",
+                "LinkedIn Profile": "https://www.linkedin.com/in/pauline-angelee-young-691930324/",
+                "Motto": "N/A",
+                "Image": "../images/interns-cinnamoroll.jpg"
+            }
+        }
+    ]
+}
