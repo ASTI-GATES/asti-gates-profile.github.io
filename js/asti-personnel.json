@@ -51,12 +51,12 @@
                 "Position": "Project Technical Specialist IV - Natural Language Processing Engine",
                 "Team": "AI team",
                 "Educational Background": "Bachelor of Science in Electrical Engineering Major in Electronics Engineering",
-                "Tenure": "=$A$4+$B$4+$C$4",
-                "Projects": "1) **iTANONG**: A Natural Language Interface to Databases for Filipinos/n2) **Building the Lakehouse**: Establishing the DOST Lakehouse and GATE Using AI-Powered Machine Learning, Business Intelligence, and Predictive Analysis for Data-Driven Decision-Making",
-                "Skills": "-NLP\\n-ML\\n-Data Science",
+                "Tenure": "N/A",
+                "Projects": "iTANONG, GATES",
+                "Skills": "NLP, ML, Data Science",
                 "Email": "jasperadriandwight.castro@astidostgovph",
                 "LinkedIn Profile": "jasperadriandwightcastro",
-                "Motto": "When you want something, all the universe conspires in helping you to achieve it",
+                "Motto": "\"When you want something, all the universe conspires in helping you to achieve it.\"",
                 "Image": "../images/ai-team-jasper-castro.png"
             }
         },
@@ -86,7 +86,7 @@
                 "Educational Background": "Engineering / MBA / Technology Management",
                 "Tenure": "26 years",
                 "Projects": "GATES, Sensor Development and Deployment, Space Tech",
-                "Skills": "",
+                "Skills": "N/A",
                 "Email": "ning@asti.dost.gov.ph",
                 "LinkedIn Profile": "N/A"
             }
@@ -180,7 +180,7 @@
                 "Skills": "Python, Org-Mode, Arduino",
                 "Email": "jeanjay.quitayen@asti.dost.gov.ph",
                 "LinkedIn Profile": "jeanjayquitayen@gmail.com",
-                "Motto": "The greatest failure in life is the failure to try",
+                "Motto": "\"The greatest failure in life is the failure to try.\"",
                 "Image": "../images/lakehouse-jean-jay-quitayen.jpeg"
             }
         }
@@ -198,7 +198,7 @@
                 "Skills": "Technical documentation, Coding, Research, Sports",
                 "Email": "alainerichelle.ramos@asti.dost.gov.ph",
                 "LinkedIn Profile": "https://www.linkedin.com/in/alaine-richelle-ramos-879197181",
-                "Motto": "Consistency is the key.",
+                "Motto": "\"Consistency is the key.\"",
                 "Image": "../images/platform-alaine-ramos.png"
             }
         },
@@ -213,7 +213,7 @@
                 "Skills": "Overthink, Programming, Lover Girl",
                 "Email": "christineshamah.cureg@gmail.com",
                 "LinkedIn Profile": "https://www.linkedin.com/in/christine-shamah-c-5a83b5293/",
-                "Motto": "God Did",
+                "Motto": "\"God Did\"",
                 "Image": "../images/platform-christine-cureg.jpg"
             }   
         },
