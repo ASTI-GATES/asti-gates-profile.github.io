@@ -7,7 +7,7 @@
                 "Team": "AI Team",
                 "Educational Background": "Electronics Engineering - Polytechnic University of the Philippines",
                 "Tenure": "1 year 2 months",
-                "Projects": "May 2024-MAy 2025 iTANONG Project, May 2025-Current GATES",
+                "Projects": "iTANONG, GATES",
                 "Skills": "Problem Solving",
                 "Email": "alyssapatricia.ocampo@asti.dost.gov.ph",
                 "LinkedIn Profile": "https://www.linkedin.com/in/alyssapatriciaocampo/",
@@ -19,7 +19,7 @@
             "christopher-belaos": {
                 "Name": "Christopher Belaos",
                 "Position": "Project Technical Specialist III - AI Engineer",
-                "Team": "AI team",
+                "Team": "AI Team",
                 "Educational Background": "College Graduate",
                 "Tenure": "3+ years",
                 "Projects": "iTANONG, GATES",
@@ -33,7 +33,7 @@
         {
             "norbert-ibera": {
                 "Name": "Norbert John Ibera",
-                "Position": "Project Technical Assistant IV; Jr. Data Engineer",
+                "Position": "Project Technical Assistant IV - Jr. Data Engineer",
                 "Team": "AI team",
                 "Educational Background": "BS EE",
                 "Tenure": "1 week",
@@ -48,14 +48,14 @@
         {
             "jasper-castro": {
                 "Name": "Jasper Adrian Dwight V. Castro",
-                "Position": "Project Technical Specialist IV - Natural Language Processing Engine",
+                "Position": "Project Technical Specialist IV - Natural Language Processing Engineer",
                 "Team": "AI team",
                 "Educational Background": "Bachelor of Science in Electrical Engineering Major in Electronics Engineering",
                 "Tenure": "N/A",
                 "Projects": "iTANONG, GATES",
                 "Skills": "NLP, ML, Data Science",
-                "Email": "jasperadriandwight.castro@astidostgovph",
-                "LinkedIn Profile": "jasperadriandwightcastro",
+                "Email": "jasperadriandwight.castro@asti.dost.gov.ph",
+                "LinkedIn Profile": "https://www.linkedin.com/in/jasperadriandwightcastro",
                 "Motto": "\"When you want something, all the universe conspires in helping you to achieve it.\"",
                 "Image": "../images/ai-team-jasper-castro.png"
             }
@@ -70,7 +70,7 @@
                 "Projects": "DATOS, SARWAIS, SRA-WAP, GATES",
                 "Skills": "RS/GIS, Python, Technical Writing",
                 "Email": "johnbartlovern.dumalag@asti.dost.gov.ph",
-                "LinkedIn Profile": "johnbartlovern.dumalag@asti.dost.gov.ph",
+                "LinkedIn Profile": "N/A",
                 "Motto": "N/A",
                 "Image": "../images/ai-team-john-bart-dumalag.jpg"
             }

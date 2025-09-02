@@ -91,7 +91,7 @@ function showStaffModal(staffId) {
                 </div>
                 <div class="contact-info">
                     <p><strong> Email:</strong> ${email !== 'N/A' ? `<a href="mailto:${email}">${email}</a>` : 'N/A'}</p>
-                    <p><strong> LinkedIn:</strong> ${linkedin && linkedin !== 'N/A' ? `<a href="${linkedin}" target="_blank">${name}</a>` : 'N/A'}</p>
+                    <p><strong> LinkedIn:</strong> ${linkedin && linkedin !== 'N/A' ? (linkedin.startsWith('http') ? `<a href="${linkedin}" target="_blank">${name}</a>` : linkedin) : 'N/A'}</p>
                 </div>
             </div>
         </div>
